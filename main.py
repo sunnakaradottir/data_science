@@ -35,6 +35,9 @@ def main():
     # Plot average values per cluster
     get_avg_per_cluster(df_enriched)
 
+    # visualize clusters with PCA
+    visualize_clusters_pca(X, kmeans_list[0].labels_)
+
     # NOTE: This will likely show that k=4 and k=8 have at least one cluster around 1% of the data, which is far too small
 
 
