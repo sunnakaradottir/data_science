@@ -1,5 +1,6 @@
 from src.data import load_credit_card_data, load_credit_card_data_normal, load_credit_card_data_fraud, scale_data
 from src.cluster import elbow_method, plot_elbow_method, perform_kmeans_clustering, search_k, visualize_clusters_pca, plot_search_k_result, get_avg_per_cluster, cluster_enricher
+from src.train import run
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import numpy as np
@@ -17,6 +18,11 @@ def main():
     # k means is distance based, so large differences in scale will affect the results
     X = scale_data(X)
 
+    # sample a subset for faster experimentation e.g. 10%
+    np.random.seed(42)
+    sample_indices = np.random.choice(X.shape[0], size=int(0.1 * X.shape[0]), replace=False)
+    X = X[sample_indices]
+
     # best k to compare with elbow method
     # search_result = search_k(X, k_range=range(2, 11)) # NOTE: this will tell us the max of k_range is usually best (heell naw)
     
@@ -29,16 +35,12 @@ def main():
         print("k=" + str(k))
         print(f"Cluster Sizes: {np.bincount(kmeans.labels_) / len(kmeans.labels_)}")    
 
-    # Enrich the original DataFrame with cluster information
-    df_enriched = cluster_enricher(df, X, kmeans_list[0])  # Using the first kmeans model as an example
+    # Choose k=3 from kmeans_list
+    kmeans = kmeans_list[0]
+    labels = kmeans.labels_
 
-    # Plot average values per cluster
-    get_avg_per_cluster(df_enriched)
+    run(X, labels)
 
-    # visualize clusters with PCA
-    visualize_clusters_pca(X, kmeans_list[0].labels_)
-
-    # NOTE: This will likely show that k=4 and k=8 have at least one cluster around 1% of the data, which is far too small
 
 
 if __name__ == "__main__":
