@@ -153,6 +153,7 @@ def get_avg_per_cluster(df: pd.DataFrame) -> None:
     cluster_means = df.groupby('cluster_id')[['Amount', 'Time', 'V1', 'V2', 'V12']].mean()
 
     print(cluster_means)
+    
 def visualize_clusters_pca(X_scaled: np.ndarray, labels: np.ndarray, n_components: int = 2) -> None:
     """
     Perform PCA for visualization and plot clusters in 2D.
