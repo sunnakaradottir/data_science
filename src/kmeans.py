@@ -2,8 +2,11 @@ import numpy as np
 import pandas as pd
 import random
 import matplotlib.pyplot as plt
+import pathlib
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
+from pathlib import Path
+#from cluster import elbow_method, plot_elbow_method
 
 
 
@@ -71,50 +74,85 @@ def plot_clusters(df, labels):
 
 
 
-def elbow_method(data, k_values=range(1, 11)) -> list[int]:
-    """
-    Apply the elbow method to determine the optimal number of clusters for KMeans.
-    Parameters:
-    - data: The input data for clustering.
-    - k_values: A list of integers representing the number of clusters to try.
 
-    Returns:
-    - A list of inertia values corresponding to each k in k_values.
-    """
-    inertia_values = []
-    for k in k_values:
-        kmeans = KMeans(n_clusters=k, random_state=42) # set random_state for reproducibility
-        kmeans.fit(data)
-        inertia_values.append(kmeans.inertia_) # inertia is the sum of squared distances to nearest cluster center
-
-    return inertia_values
-
-def plot_elbow_method(k_values: list[int], inertia_values: list[int]) -> None:
-    """
-    Plot the results of the elbow method.
-    Parameters:
-    - k_values: A list of integers representing the number of clusters.
-    - inertia_values: A list of inertia values corresponding to each k in k_values.
-    """
-    import matplotlib.pyplot as plt
-
-    plt.figure(figsize=(8, 5))
-    plt.plot(k_values, inertia_values, 'bo-')
-    plt.xlabel('Number of clusters (k)')
-    plt.ylabel('Inertia')
-    plt.title('Elbow Method for Optimal k')
-    plt.xticks(k_values)
-    plt.grid(True)
-    plt.show()
-
-
-
-df = pd.read_csv('./data/creditcard.csv').drop(columns=['Class'])
-labels, centroids = kmeans_implementation(df, k=3, random_state=42)
+#df = pd.read_csv('./data/creditcard.csv').drop(columns=['Class'])
+#labels, centroids = kmeans_implementation(df, k=3, random_state=42)
 #plot_clusters(df, labels)
 
-k_values = list(range(1, 11))
-plot_elbow_method(k_values, elbow_method(df, k_values))
+#k_values = list(range(1, 11))
+#plot_elbow_method(k_values, elbow_method(df, k_values))
+
+
+
+
+def centroid(cluster_df):
+    """Compute the centroid (mean) of a cluster DataFrame."""
+    return cluster_df.mean(axis=0)
+
+def kmeans2(points_df, k=2, max_iters=100, tol=1e-4, random_state=None):
+  
+    if random_state is not None:
+        np.random.seed(random_state)
+
+    n = len(points_df)
+    feature_names = points_df.columns
+
+    # Step 0: Initialization — pick k random points as initial centroids
+    idx = np.random.choice(n, size=k, replace=False)
+    representatives = [points_df.iloc[i] for i in idx]
+
+    # Initialize cluster containers
+    clusters = [pd.DataFrame(columns=feature_names) for _ in range(k)]
+    labels = np.zeros(n, dtype=int)
+
+    for iteration in range(max_iters):
+        # Reset clusters
+        clusters = [pd.DataFrame(columns=feature_names) for _ in range(k)]
+
+        # Step 1: Assign each point to nearest cluster
+        for i, (_, p) in enumerate(points_df.iterrows()):
+            # Compute distances to each cluster centroid
+            distances = []
+            for c in range(k):
+                if len(clusters[c]) == 0:
+                    center = representatives[c]
+                else:
+                    center = centroid(clusters[c])
+                d = np.sqrt(((p - center) ** 2).sum())
+                distances.append(d)
+
+            # Assign to nearest cluster
+            cluster_idx = np.argmin(distances)
+            clusters[cluster_idx] = pd.concat([clusters[cluster_idx], p.to_frame().T], ignore_index=True)
+            labels[i] = cluster_idx
+
+        # Step 2: Update representatives (centroids)
+        new_representatives = []
+        for c in range(k):
+            if len(clusters[c]) > 0:
+                new_representatives.append(centroid(clusters[c]))
+            else:
+                # Handle empty cluster by picking a random point
+                new_representatives.append(points_df.sample(1, random_state=random_state).iloc[0])
+
+        # Step 3: Check for convergence
+        shift = sum(np.linalg.norm(new_representatives[i] - representatives[i]) for i in range(k))
+        if shift < tol:
+            print(f"Converged after {iteration + 1} iterations.")
+            break
+
+        representatives = new_representatives
+
+    # Combine final centroids into a DataFrame
+    centroids_df = pd.DataFrame(representatives, columns=feature_names)
+
+    labels_series = pd.Series(labels, name='Cluster')
+
+    return labels_series, centroids_df, clusters
+
+df = pd.read_csv('./data/creditcard.csv').drop(columns=['Class'])
+labels, centroids, clusters = kmeans2(df, k=3)
+plot_clusters(df, labels)
 
 
 #print(f"Cluster Sizes: {np.bincount(labels) / len(labels)}")
