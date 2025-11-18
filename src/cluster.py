@@ -9,6 +9,8 @@ from collections import namedtuple
 KMeansType = Union[KMeans, MiniBatchKMeans]
 KMeansSearchResult = namedtuple("KMeansSearchResult", ["best_k", "best_metric", "metric_name", "scores"])
 from src.data import load_base_data, load_scaler
+from joblib import dump, load
+
 
 
 
@@ -68,30 +70,38 @@ def fit_k_means_and_save(
     kmeans_out_path: str = '../data/kmeans.joblib',
 ):
     """
-    Fit KMeans on the base data and save labels and centroids to disk.
-    Parameters:
-    - n_clusters: The number of clusters to form.
-    - labels_out_path: Path to save the cluster labels.
-    - centroids_out_path: Path to save the cluster centroids.
+    Fit KMeans on the (scaled) base data and save the model to disk.
     """
-    #TODO: ARNORN KLARA
     dir_path = os.path.dirname(os.path.abspath(__file__))
 
     # 1) Load base data (only normals)
     df = load_base_data()
     X = df.drop(columns=["Class"]).values
 
-    # 2) load scaler and scale
+    # 2) Load scaler and scale
     scaler = load_scaler()
     X_scaled = scaler.transform(X)
 
     # 3) Fit KMeans once
     kmeans = perform_kmeans_clustering(X_scaled, n_clusters=n_clusters)
 
-    # 4) Save labels and centroids
-    
+    # 4) Save model to disk
+    kmeans_path = os.path.join(dir_path, kmeans_out_path)
+    dump(kmeans, kmeans_path)
+    print(f"KMeans model saved to {kmeans_path}")
+    return kmeans  # optional, but handy
 
-    # dump()
+
+def load_kmeans_model(kmeans_path: str = '../data/kmeans.joblib') -> KMeans:
+    """
+    Load a saved KMeans model from disk.
+    """
+    dir_path = os.path.dirname(os.path.abspath(__file__))
+    full_path = os.path.join(dir_path, kmeans_path)
+    kmeans = load(full_path)
+    return kmeans
+
+
 def search_k(
     X: np.ndarray,
     k_range: range = range(3, 11),
