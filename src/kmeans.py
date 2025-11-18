@@ -152,8 +152,18 @@ def kmeans2(points_df, k=2, max_iters=100, tol=1e-4, random_state=None):
 
 df = pd.read_csv('./data/creditcard.csv').drop(columns=['Class'])
 labels, centroids, clusters = kmeans2(df, k=3)
-plot_clusters(df, labels)
+#plot_clusters(df, labels)
 
+pca = PCA(n_components=2)
+reduced = pca.fit_transform(df)
+
+plt.figure(figsize=(8, 6))
+plt.scatter(reduced[:, 0], reduced[:, 1], c=labels)
+plt.title("K-Means Clusters")
+plt.xlabel("Principal Component 1")
+plt.ylabel("Principal Component 2")
+plt.colorbar(label="Cluster ID")
+plt.show()
 
 #print(f"Cluster Sizes: {np.bincount(labels) / len(labels)}")
 
