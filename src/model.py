@@ -40,11 +40,11 @@ class AutoEncoder(nn.Module):
 
 
 # Choose the shape of the autoencoder
-net = AutoEncoder(in_dim=num_features, hidden_units=64, latent_features=2).to(DEVICE)
+# net = AutoEncoder(in_dim=num_features, hidden_units=64, latent_features=2).to(DEVICE)
 
 
-print(net)
+# print(net)
 
-optimizer = optim.Adam(net.parameters(), lr=0.001)
+# optimizer = optim.Adam(net.parameters(), lr=0.001)
 
-criterion = nn.MSELoss()  # Mean Squared Error loss for reconstruction
+# criterion = nn.MSELoss()  # Mean Squared Error loss for reconstruction
