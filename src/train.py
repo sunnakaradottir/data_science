@@ -96,7 +96,7 @@ def run(X_scaled: np.ndarray, labels: np.ndarray, cluster_id: int, sweep=False):
     If sweep=True, use sweep config; else, flatten config and pick first values.
     """
     if sweep:
-        wandb.init(project="card-fraud-ae", entity="card-fraud-gang", config=CONFIG["parameters"])
+        wandb.init(project="card-fraud-ae", entity="card-fraud-gang")
         cfg = dict(wandb.config)
     else:
         flat_cfg = flatten_config(CONFIG)
