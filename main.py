@@ -41,7 +41,5 @@ def main():
 
     run(X, labels)
 
-
-
 if __name__ == "__main__":
     main()
