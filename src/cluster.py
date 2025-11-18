@@ -1,3 +1,4 @@
+import os
 from sklearn.cluster import KMeans
 import numpy as np
 from typing import List, Tuple, Union
@@ -7,7 +8,7 @@ from sklearn.cluster import MiniBatchKMeans
 from collections import namedtuple
 KMeansType = Union[KMeans, MiniBatchKMeans]
 KMeansSearchResult = namedtuple("KMeansSearchResult", ["best_k", "best_metric", "metric_name", "scores"])
-
+from src.data import load_base_data, load_scaler
 
 
 
@@ -62,6 +63,35 @@ def perform_kmeans_clustering(data, n_clusters: int) -> KMeans:
     kmeans.fit(data)
     return kmeans
 
+def fit_k_means_and_save(
+    n_clusters: int,
+    kmeans_out_path: str = '../data/kmeans.joblib',
+):
+    """
+    Fit KMeans on the base data and save labels and centroids to disk.
+    Parameters:
+    - n_clusters: The number of clusters to form.
+    - labels_out_path: Path to save the cluster labels.
+    - centroids_out_path: Path to save the cluster centroids.
+    """
+    #TODO: ARNORN KLARA
+    dir_path = os.path.dirname(os.path.abspath(__file__))
+
+    # 1) Load base data (only normals)
+    df = load_base_data()
+    X = df.drop(columns=["Class"]).values
+
+    # 2) load scaler and scale
+    scaler = load_scaler()
+    X_scaled = scaler.transform(X)
+
+    # 3) Fit KMeans once
+    kmeans = perform_kmeans_clustering(X_scaled, n_clusters=n_clusters)
+
+    # 4) Save labels and centroids
+    
+
+    # dump()
 def search_k(
     X: np.ndarray,
     k_range: range = range(3, 11),
