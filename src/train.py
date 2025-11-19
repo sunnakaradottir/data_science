@@ -52,7 +52,7 @@ def _train_cluster(X_cluster: np.ndarray, in_dim: int, cfg, cid: int) -> tuple[A
 
     loader = DataLoader(TensorDataset(X_train_t), batch_size=cfg["batch_size"], shuffle=True)
 
-    net = AutoEncoder(in_dim=in_dim, hidden_units=cfg["hidden_dim"], latent_features=cfg["latent"]).to(DEVICE)
+    net = AutoEncoder(in_dim=in_dim, hidden_units=cfg["hidden_dim"], latent_features=cfg["latent"], num_layers=cfg["num_layers"]).to(DEVICE)
     opt = torch.optim.Adam(net.parameters(), lr=cfg["lr"], weight_decay=cfg["weight_decay"])
     crit = nn.MSELoss()
 

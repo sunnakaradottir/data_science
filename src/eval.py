@@ -1,5 +1,6 @@
 import pandas as pd
 from src.data import load_scaler
+from src.cluster import load_kmeans_model
 import torch
 import numpy as np
 
@@ -8,8 +9,6 @@ def evaluate_thresholds(model, scaler, tune_data_path='../data/tune_data.csv', c
     """
     Evaluate different classification thresholds on the tune dataset to find the optimal threshold.
     """
-
-    #TODO: HELGA BEAST
 
     df = pd.read_csv("../data/tune_data.csv")
 
@@ -20,11 +19,17 @@ def evaluate_thresholds(model, scaler, tune_data_path='../data/tune_data.csv', c
     scaler = load_scaler()
     X_scaled = scaler.transform(X)   # class labels NOT touched
 
-    # Convert to torch tensor
-    X_t = torch.tensor(X_scaled, dtype=torch.float32)
-
     #TODO: GET ONLY DATA CORRESPONDING TO THIS CLUSTER
-    
+    # Data was scaled before training model
+    kmeans_model = load_kmeans_model()
+    cluster_label = kmeans_model.predict(X_scaled)
+
+    mask = cluster_label == cluster_id
+    X_cluster = X_scaled[mask]
+    y = y[mask]
+
+    # Convert to torch tensor
+    X_t = torch.tensor(X_cluster, dtype=torch.float32)
 
     model.eval()
     with torch.no_grad():

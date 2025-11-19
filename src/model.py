@@ -9,23 +9,36 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 num_features = 30  # number of input features (columns) in the dataset
 
 class AutoEncoder(nn.Module):
-    def __init__(self, in_dim=num_features, hidden_units=64, latent_features=2):
+    def __init__(self, in_dim=num_features, hidden_units=64, latent_features=2, num_layers=1):
         super(AutoEncoder, self).__init__()
         # We typically employ an "hourglass" structure
         # meaning that the decoder should be an encoder
         # in reverse.
         
-        self.encoder = nn.Sequential(
-            nn.Linear(in_features=in_dim, out_features=hidden_units),
-            nn.ReLU(),
-            nn.Linear(in_features=hidden_units, out_features=latent_features)
-        )
+        def init_encoder_decoder(in_features, out_features, hidden_units, num_layers):
+            '''
+            Create an encoder / decoder with a dynamic number of layers
 
-        self.decoder = nn.Sequential(
-            nn.Linear(in_features=latent_features, out_features=hidden_units),
-            nn.ReLU(),
-            nn.Linear(in_features=hidden_units, out_features=in_dim)
-        )
+            '''
+
+            # we can use the same function of encoder and decoder
+            layers = []
+
+            # First layer
+            layers.append(nn.Linear(in_features, hidden_units)),
+            layers.append(nn.ReLU())
+
+            for _ in range(num_layers-1):
+                layers.append(nn.Linear(hidden_units, hidden_units))
+                layers.append(nn.ReLU())
+
+            # Final layer
+            layers.append(nn.Linear(hidden_units, out_features))
+
+            return nn.Sequential(*layers)
+
+        self.encoder = init_encoder_decoder(in_dim, latent_features, hidden_units, num_layers)
+        self.decoder = init_encoder_decoder(latent_features, in_dim, hidden_units, num_layers)
 
     def forward(self, x): 
         
