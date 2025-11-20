@@ -5,16 +5,16 @@ import torch
 import numpy as np
 
 
-def evaluate_thresholds(model, scaler, tune_data_path='../data/tune_data.csv', cluster_id: int = 0) -> None:
+def evaluate_thresholds(model, scaler, tune_data_path='/data/tune_data.csv', cluster_id: int = 0) -> None:
     """
     Evaluate different classification thresholds on the tune dataset to find the optimal threshold.
     """
 
-    df = pd.read_csv("../data/tune_data.csv")
+    df = pd.read_csv(tune_data_path)
 
     # Separate features and labels
     X = df.drop(columns=["Class"]).values
-    y = df["Class"].values   # <-- labels are preserved
+    y = df["Class"].values 
     
     scaler = load_scaler()
     X_scaled = scaler.transform(X)   # class labels NOT touched
@@ -58,3 +58,44 @@ def evaluate_thresholds(model, scaler, tune_data_path='../data/tune_data.csv', c
     # Store results as a readible file to analyze later
     results_df = pd.DataFrame(results, columns=["Threshold", "Recall", "FPR"])
     results_df.to_csv("../results/threshold_tuning_results.csv", index=False)
+
+
+
+    # fall 1: 
+    #   determine'ar threshold per cluster
+    #   gefur út stats fyrir það
+    #   (fjórar mism skrár, með stats um hvern cluster)
+
+    # fall 2:
+    #   lpadar modelum
+    #   notar threshold
+    #   tekur punkt
+    #   assignar á autencoder
+
+
+def final_run(thresholds=[0.5, 0.5, 0.5, 0.5], tune_data_path='../data/tune_data.csv'):
+
+    df = pd.read_csv(tune_data_path)
+
+    # Separate features and labels
+    X = df.drop(columns=["Class"]).values
+    y = df["Class"].values 
+    
+    scaler = load_scaler()
+    X_scaled = scaler.transform(X)   
+
+    kmeans_model = load_kmeans_model()
+    X_scaled["cluster_label"] = kmeans_model.predict(X_scaled)
+
+
+    # Split X_scaled into clusters
+    clusters = {}
+    for cid in range(len(thresholds)):
+        clusters[cid] = X_scaled[X_scaled["cluster_label"] == cid]
+
+
+    # Tekur punkt og hendir í rétt módel
+
+
+    # assignar módel
+ 
