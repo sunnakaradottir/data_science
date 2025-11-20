@@ -14,7 +14,7 @@ parameters:
   weight_decay:
     values: [0.0, 1e-6, 1e-5]
   epochs:
-    values: [10, 20, 30, 40, 50]
+    values: [10, 20, 30, 40, 50,70,90,100]
   # optimizer:
   #   values: ['adam', 'adamw']
   seed:
@@ -24,7 +24,7 @@ parameters:
   latent:
     value: 8
   num_layers:
-    values: [1, 2, 3, 4, 5]
+    values: [1, 2, 3, 4, 5,6,7,8]
   val_split:
     value: 0.2
   out_dir:

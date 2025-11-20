@@ -29,7 +29,7 @@ def main_setup():
     """
     prepare_tune_split(times=4)
     fit_and_save_scaler(path_to_data='../data/base_data.csv')
-    fit_k_means_and_save(n_clusters=3)
+    fit_k_means_and_save(n_clusters=4)
     
 
 

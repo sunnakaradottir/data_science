@@ -1,25 +1,23 @@
 import numpy as np
-import pandas as pd
 import random
-import matplotlib.pyplot as plt
-import pathlib
-from sklearn.decomposition import PCA
-from sklearn.cluster import KMeans
-from pathlib import Path
-#from cluster import elbow_method, plot_elbow_method
 
-
-
-def kmeans_implementation(df, k, max_iters=300, tol=0.0001, random_state=None):
+# Our implementation of the K-means clustering algorithm.
+def kmeans_implementation(X, k, max_iters=300, tol=0.0001, random_state=42) -> tuple[np.ndarray, np.ndarray]:
     """
-    Our implementation of the K-means clustering algorithm.
+    A simple implementation of the K-means clustering algorithm.
+    Parameters:
+    - X: Input data, scaled numpy array of shape (n_samples, n_features).
+    - k: Number of clusters.
+    - max_iters: Maximum number of iterations.
+    - tol: Tolerance to declare convergence.
+    - random_state: Seed for reproducibility.
     """
 
     if random_state is not None:
         random.seed(random_state)
         np.random.seed(random_state)
 
-    data = df.to_numpy()
+    data = np.asarray(X)
     n_samples, n_features = data.shape
 
     # Randomly choose initial centroids
@@ -48,57 +46,13 @@ def kmeans_implementation(df, k, max_iters=300, tol=0.0001, random_state=None):
 
         centroids = new_centroids
 
-    # Convert results back to pandas objects
-    centroids_df = pd.DataFrame(centroids, columns=df.columns)
-    labels_series = pd.Series(labels, name="Cluster")
+    return labels, centroids
+class OurKmeans:
+    def __init__(self, centroids: np.ndarray):
+        self.centroids = centroids  # shape: (k, n_features)
 
-    return labels_series, centroids
-
-
-
-# Test:
-
-def plot_clusters(df, labels):
-
-    pca = PCA(n_components=2)
-    reduced = pca.fit_transform(df)
-    
-    plt.figure(figsize=(8, 6))
-    plt.scatter(reduced[:, 0], reduced[:, 1], c=labels)
-    plt.title("K-Means Clusters")
-    plt.xlabel("Principal Component 1")
-    plt.ylabel("Principal Component 2")
-    plt.colorbar(label="Cluster ID")
-    plt.show()
-
-
-
-
-
-#df = pd.read_csv('./data/creditcard.csv').drop(columns=['Class'])
-#labels, centroids = kmeans_implementation(df, k=3, random_state=42)
-#plot_clusters(df, labels)
-
-#k_values = list(range(1, 11))
-#plot_elbow_method(k_values, elbow_method(df, k_values))
-
-df = pd.read_csv('./data/creditcard.csv').drop(columns=['Class'])
-labels, centroids = kmeans_implementation(df, k=8, random_state=42)
-#plot_clusters(df, labels)
-
-pca = PCA(n_components=2)
-reduced = pca.fit_transform(df)
-
-plt.figure(figsize=(8, 6))
-plt.scatter(reduced[:, 0], reduced[:, 1], c=labels)
-plt.title("K-Means Clusters")
-plt.xlabel("Principal Component 1")
-plt.ylabel("Principal Component 2")
-plt.colorbar(label="Cluster ID")
-plt.show()
-
-#print(f"Cluster Sizes: {np.bincount(labels) / len(labels)}")
-
-
-
-
+    def predict(self, X: np.ndarray) -> np.ndarray:
+        """Assign each row in X to the nearest centroid."""
+        X = np.asarray(X)
+        distances = np.linalg.norm(X[:, np.newaxis, :] - self.centroids[np.newaxis, :, :], axis=2)
+        return np.argmin(distances, axis=1)
