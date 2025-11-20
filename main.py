@@ -27,9 +27,9 @@ def main_setup():
     - create base and tune splits
     - fit scaler on all normal transactions (minus ones in tune set ca. 2500 samples)
     """
-    prepare_tune_split(times=5)
+    prepare_tune_split(times=4)
     fit_and_save_scaler(path_to_data='../data/base_data.csv')
-    fit_k_means_and_save(n_clusters=3)
+    fit_k_means_and_save(n_clusters=4)
     
 
 
@@ -40,9 +40,9 @@ def main_single_cluster():
 
 def main():
     # Uncomment to run setup (create splits and fit scaler)
-    # main_setup()
+    main_setup()
 
-   main_single_cluster()
+#    main_single_cluster()
 
 
 if __name__ == "__main__":
