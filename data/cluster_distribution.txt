@@ -1,0 +1,5 @@
+Cluster distribution:
+Cluster 0: 33591 samples (11.90%)
+Cluster 1: 19755 samples (7.00%)
+Cluster 2: 137615 samples (48.74%)
+Cluster 3: 91386 samples (32.37%)

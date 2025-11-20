@@ -47,6 +47,7 @@ def kmeans_implementation(X, k, max_iters=300, tol=0.0001, random_state=42) -> t
         centroids = new_centroids
 
     return labels, centroids
+
 class OurKmeans:
     def __init__(self, centroids: np.ndarray):
         self.centroids = centroids  # shape: (k, n_features)

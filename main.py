@@ -1,6 +1,6 @@
-from src.data import load_base_data, fit_and_save_scaler, load_scaler, prepare_tune_split
+from src.data import load_base_data, fit_and_save_scaler, load_scaler, prepare_tune_split, label_tune_data_clusters
 from src.cluster import load_kmeans_model, fit_k_means_and_save
-# from src.train import run
+from src.train import run
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import numpy as np
@@ -33,17 +33,17 @@ def main_setup():
     
 
 
-# def main_single_cluster():
-#     X, labels = prep()
-#     run(X, labels, cluster_id=2, sweep=True)
+def main_single_cluster():
+    X, labels = prep()
+    run(X, labels, sweep=True)
 
 
 def main():
     # Uncomment to run setup (create splits and fit scaler)
-    main_setup()
+    # main_setup()
 
-   #main_single_cluster()
-
+    main_single_cluster()
+    # label_tune_data_clusters()
 
 if __name__ == "__main__":
     main()

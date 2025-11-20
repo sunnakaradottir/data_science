@@ -86,13 +86,19 @@ def fit_k_means_and_save(
     # 3) Fit KMeans once
     kmeans = perform_kmeans_clustering(X_scaled, n_clusters=n_clusters)
 
-    # print size of each cluster as percentage
+    # print size of each cluster as percentage and save as text file
     labels = kmeans.predict(X_scaled)
     unique, counts = np.unique(labels, return_counts=True)
     total = len(labels)
     print("Cluster distribution:")
     for u, c in zip(unique, counts):
         print(f"Cluster {u}: {c} samples ({(c/total)*100:.2f}%)")
+    cluster_dist_path = os.path.join(dir_path, '../data/cluster_distribution.txt')
+    with open(cluster_dist_path, 'w') as f:
+        f.write("Cluster distribution:\n")
+        for u, c in zip(unique, counts):
+            f.write(f"Cluster {u}: {c} samples ({(c/total)*100:.2f}%)\n")
+    print(f"Cluster distribution saved to {cluster_dist_path}")
 
     # 4) Save model to disk
     kmeans_path = os.path.join(dir_path, kmeans_out_path)

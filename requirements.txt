@@ -5,5 +5,11 @@ pandas==2.2.3
 python-dotenv==1.0.1
 PyYAML==6.0.2
 scikit-learn==1.6.0
-torch==2.2.2
 wandb==0.19.2
+# also needs torch 2.2.2
+# use:
+# pip install torch==2.2.2+cu118 torchvision==0.17.2+cu118 torchaudio==2.2.2 --extra-index-url https://download.pytorch.org/whl/cu118
+
+
+
+

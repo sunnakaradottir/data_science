@@ -1,0 +1,2552 @@
+Loaded module: cuda/11.8
+wandb: Starting wandb agent 🕵️
+2025-11-20 18:44:06,160 - wandb.wandb_agent - INFO - Running runs: []
+2025-11-20 18:44:06,651 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 18:44:06,651 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 100
+	hidden_dim: 128
+	latent: 8
+	lr: 0.05242107586548748
+	num_layers: 4
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 18:44:06,659 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=100 --hidden_dim=128 --latent=8 --lr=0.05242107586548748 --num_layers=4 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 18:44:11,671 - wandb.wandb_agent - INFO - Running runs: ['mbz82pqg']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_184431-mbz82pqg
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run earnest-sweep-1
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/mbz82pqg
+wandb: - 0.427 MB of 0.427 MB uploadedwandb: \ 0.427 MB of 0.435 MB uploadedwandb: | 0.435 MB of 0.435 MB uploadedwandb: / 0.435 MB of 0.435 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse █▅▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▁█▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99097
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 0.93883
+wandb:      val_mse 0.99549
+wandb: 
+wandb: 🚀 View run earnest-sweep-1 at: https://wandb.ai/card-fraud-gang/data_science/runs/mbz82pqg
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_184431-mbz82pqg/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 18:52:28,209 - wandb.wandb_agent - INFO - Cleaning up finished run: mbz82pqg
+2025-11-20 18:52:28,805 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 18:52:28,805 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 30
+	hidden_dim: 1024
+	latent: 8
+	lr: 0.09745373215704106
+	num_layers: 7
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 18:52:28,810 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=30 --hidden_dim=1024 --latent=8 --lr=0.09745373215704106 --num_layers=7 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 18:52:33,821 - wandb.wandb_agent - INFO - Running runs: ['wjca1v9z']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_185236-wjca1v9z
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dazzling-sweep-2
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/wjca1v9z
+wandb: - 2.379 MB of 48.366 MB uploadedwandb: \ 3.838 MB of 48.373 MB uploadedwandb: | 4.323 MB of 48.373 MB uploadedwandb: / 5.292 MB of 48.373 MB uploadedwandb: - 6.510 MB of 48.373 MB uploadedwandb: \ 7.729 MB of 48.373 MB uploadedwandb: | 8.463 MB of 48.373 MB uploadedwandb: / 9.432 MB of 48.373 MB uploadedwandb: - 10.401 MB of 48.373 MB uploadedwandb: \ 11.385 MB of 48.373 MB uploadedwandb: | 12.354 MB of 48.373 MB uploadedwandb: / 13.088 MB of 48.373 MB uploadedwandb: - 14.057 MB of 48.373 MB uploadedwandb: \ 14.792 MB of 48.373 MB uploadedwandb: | 15.760 MB of 48.373 MB uploadedwandb: / 16.479 MB of 48.373 MB uploadedwandb: - 17.463 MB of 48.373 MB uploadedwandb: \ 18.182 MB of 48.373 MB uploadedwandb: | 18.917 MB of 48.373 MB uploadedwandb: / 19.885 MB of 48.373 MB uploadedwandb: - 20.620 MB of 48.373 MB uploadedwandb: \ 21.588 MB of 48.373 MB uploadedwandb: | 22.323 MB of 48.373 MB uploadedwandb: / 22.807 MB of 48.373 MB uploadedwandb: - 23.542 MB of 48.373 MB uploadedwandb: \ 24.276 MB of 48.373 MB uploadedwandb: | 25.479 MB of 48.373 MB uploadedwandb: / 26.698 MB of 48.373 MB uploadedwandb: - 27.682 MB of 48.373 MB uploadedwandb: \ 28.401 MB of 48.373 MB uploadedwandb: | 29.135 MB of 48.373 MB uploadedwandb: / 30.354 MB of 48.373 MB uploadedwandb: - 31.323 MB of 48.373 MB uploadedwandb: \ 32.057 MB of 48.373 MB uploadedwandb: | 32.542 MB of 48.373 MB uploadedwandb: / 33.510 MB of 48.373 MB uploadedwandb: - 33.995 MB of 48.373 MB uploadedwandb: \ 34.729 MB of 48.373 MB uploadedwandb: | 35.463 MB of 48.373 MB uploadedwandb: / 35.948 MB of 48.373 MB uploadedwandb: - 36.682 MB of 48.373 MB uploadedwandb: \ 37.401 MB of 48.373 MB uploadedwandb: | 38.135 MB of 48.373 MB uploadedwandb: / 38.870 MB of 48.373 MB uploadedwandb: - 39.588 MB of 48.373 MB uploadedwandb: \ 40.323 MB of 48.373 MB uploadedwandb: | 41.057 MB of 48.373 MB uploadedwandb: / 41.776 MB of 48.373 MB uploadedwandb: - 42.510 MB of 48.373 MB uploadedwandb: \ 43.245 MB of 48.373 MB uploadedwandb: | 43.979 MB of 48.373 MB uploadedwandb: / 44.698 MB of 48.373 MB uploadedwandb: - 45.682 MB of 48.373 MB uploadedwandb: \ 46.401 MB of 48.373 MB uploadedwandb: | 47.370 MB of 48.373 MB uploadedwandb: / 48.104 MB of 48.373 MB uploadedwandb: - 48.373 MB of 48.373 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▅▆▆▆▆▇▇▇▇███
+wandb:    train_mse █▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse █▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 3.0981177544586676e+25
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 30
+wandb:    train_mse 3.0219926941150777e+25
+wandb:      val_mse 3.0981177544586676e+25
+wandb: 
+wandb: 🚀 View run dazzling-sweep-2 at: https://wandb.ai/card-fraud-gang/data_science/runs/wjca1v9z
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_185236-wjca1v9z/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 18:55:04,066 - wandb.wandb_agent - INFO - Cleaning up finished run: wjca1v9z
+2025-11-20 18:55:04,628 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 18:55:04,628 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 100
+	hidden_dim: 1024
+	latent: 8
+	lr: 0.05569377584177849
+	num_layers: 8
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 18:55:04,633 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=100 --hidden_dim=1024 --latent=8 --lr=0.05569377584177849 --num_layers=8 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 18:55:09,643 - wandb.wandb_agent - INFO - Running runs: ['8fkxpt8w']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_185512-8fkxpt8w
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run worldly-sweep-3
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/8fkxpt8w
+wandb: - 0.332 MB of 56.386 MB uploadedwandb: \ 0.983 MB of 56.386 MB uploadedwandb: | 1.483 MB of 56.386 MB uploadedwandb: / 2.061 MB of 56.386 MB uploadedwandb: - 2.765 MB of 56.386 MB uploadedwandb: \ 3.468 MB of 56.386 MB uploadedwandb: | 4.311 MB of 56.386 MB uploadedwandb: / 4.874 MB of 56.386 MB uploadedwandb: - 5.577 MB of 56.386 MB uploadedwandb: \ 6.171 MB of 56.386 MB uploadedwandb: | 6.733 MB of 56.386 MB uploadedwandb: / 7.249 MB of 56.386 MB uploadedwandb: - 8.030 MB of 56.386 MB uploadedwandb: \ 8.858 MB of 56.386 MB uploadedwandb: | 9.874 MB of 56.386 MB uploadedwandb: / 10.749 MB of 56.386 MB uploadedwandb: - 11.421 MB of 56.386 MB uploadedwandb: \ 12.015 MB of 56.386 MB uploadedwandb: | 12.671 MB of 56.386 MB uploadedwandb: / 13.546 MB of 56.386 MB uploadedwandb: - 14.093 MB of 56.386 MB uploadedwandb: \ 14.671 MB of 56.386 MB uploadedwandb: | 15.343 MB of 56.386 MB uploadedwandb: / 16.265 MB of 56.386 MB uploadedwandb: - 17.108 MB of 56.386 MB uploadedwandb: \ 17.890 MB of 56.386 MB uploadedwandb: | 18.827 MB of 56.386 MB uploadedwandb: / 19.624 MB of 56.386 MB uploadedwandb: - 20.390 MB of 56.386 MB uploadedwandb: \ 21.046 MB of 56.386 MB uploadedwandb: | 21.561 MB of 56.386 MB uploadedwandb: / 22.218 MB of 56.386 MB uploadedwandb: - 22.983 MB of 56.386 MB uploadedwandb: \ 24.171 MB of 56.386 MB uploadedwandb: | 25.030 MB of 56.386 MB uploadedwandb: / 25.515 MB of 56.386 MB uploadedwandb: - 26.015 MB of 56.386 MB uploadedwandb: \ 26.671 MB of 56.386 MB uploadedwandb: | 27.077 MB of 56.386 MB uploadedwandb: / 27.749 MB of 56.386 MB uploadedwandb: - 28.390 MB of 56.386 MB uploadedwandb: \ 28.983 MB of 56.386 MB uploadedwandb: | 29.561 MB of 56.386 MB uploadedwandb: / 30.280 MB of 56.386 MB uploadedwandb: - 30.858 MB of 56.386 MB uploadedwandb: \ 31.546 MB of 56.386 MB uploadedwandb: | 32.140 MB of 56.386 MB uploadedwandb: / 32.890 MB of 56.386 MB uploadedwandb: - 33.390 MB of 56.386 MB uploadedwandb: \ 33.874 MB of 56.386 MB uploadedwandb: | 34.515 MB of 56.386 MB uploadedwandb: / 34.936 MB of 56.386 MB uploadedwandb: - 35.265 MB of 56.386 MB uploadedwandb: \ 36.171 MB of 56.386 MB uploadedwandb: | 37.030 MB of 56.386 MB uploadedwandb: / 37.593 MB of 56.386 MB uploadedwandb: - 38.171 MB of 56.386 MB uploadedwandb: \ 38.765 MB of 56.386 MB uploadedwandb: | 39.265 MB of 56.386 MB uploadedwandb: / 39.827 MB of 56.386 MB uploadedwandb: - 40.593 MB of 56.386 MB uploadedwandb: \ 41.186 MB of 56.386 MB uploadedwandb: | 41.827 MB of 56.386 MB uploadedwandb: / 42.577 MB of 56.386 MB uploadedwandb: - 43.171 MB of 56.386 MB uploadedwandb: \ 43.921 MB of 56.386 MB uploadedwandb: | 44.686 MB of 56.386 MB uploadedwandb: / 45.265 MB of 56.386 MB uploadedwandb: - 46.155 MB of 56.386 MB uploadedwandb: \ 46.921 MB of 56.386 MB uploadedwandb: | 47.796 MB of 56.386 MB uploadedwandb: / 48.374 MB of 56.386 MB uploadedwandb: - 48.858 MB of 56.386 MB uploadedwandb: \ 49.280 MB of 56.386 MB uploadedwandb: | 49.921 MB of 56.386 MB uploadedwandb: / 50.593 MB of 56.386 MB uploadedwandb: - 50.936 MB of 56.386 MB uploadedwandb: \ 51.796 MB of 56.386 MB uploadedwandb: | 52.390 MB of 56.386 MB uploadedwandb: / 52.905 MB of 56.386 MB uploadedwandb: - 53.374 MB of 56.386 MB uploadedwandb: \ 53.983 MB of 56.386 MB uploadedwandb: | 54.624 MB of 56.386 MB uploadedwandb: / 55.374 MB of 56.386 MB uploadedwandb: - 56.155 MB of 56.386 MB uploadedwandb: \ 56.386 MB of 56.386 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁███████████████████████████████████████
+wandb:      val_mse ████▇▇▇▇▆▆▆▆▆▆▆▅▅▅▅▅▅▄▄▄▄▄▃▃▃▃▃▃▂▂▂▂▂▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 2.859069366605096e+30
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 2.719294536019802e+30
+wandb:      val_mse 2.859069366605096e+30
+wandb: 
+wandb: 🚀 View run worldly-sweep-3 at: https://wandb.ai/card-fraud-gang/data_science/runs/8fkxpt8w
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_185512-8fkxpt8w/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 18:59:38,464 - wandb.wandb_agent - INFO - Cleaning up finished run: 8fkxpt8w
+2025-11-20 18:59:38,982 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 18:59:38,982 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 512
+	epochs: 50
+	hidden_dim: 512
+	latent: 8
+	lr: 0.07378506200330819
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 18:59:38,987 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=512 --epochs=50 --hidden_dim=512 --latent=8 --lr=0.07378506200330819 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 18:59:43,998 - wandb.wandb_agent - INFO - Running runs: ['02rm7ixo']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_185946-02rm7ixo
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run logical-sweep-4
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/02rm7ixo
+wandb: - 0.159 MB of 0.159 MB uploadedwandb: \ 0.159 MB of 0.166 MB uploadedwandb: | 0.163 MB of 0.166 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ███▇▇▆▆▆▅▄▄▄▃▃▃▂▂▂▁▂▁▁▁▁▁▁▁▁▁▃▄▃▄▅▅▅▃▃▄▆
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.27767
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 50
+wandb:    train_mse 0.63919
+wandb:      val_mse 0.75492
+wandb: 
+wandb: 🚀 View run logical-sweep-4 at: https://wandb.ai/card-fraud-gang/data_science/runs/02rm7ixo
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_185946-02rm7ixo/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:00:25,364 - wandb.wandb_agent - INFO - Cleaning up finished run: 02rm7ixo
+2025-11-20 19:00:26,115 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:00:26,115 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 100
+	hidden_dim: 256
+	latent: 8
+	lr: 0.03872875159863788
+	num_layers: 4
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:00:26,121 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=100 --hidden_dim=256 --latent=8 --lr=0.03872875159863788 --num_layers=4 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:00:31,132 - wandb.wandb_agent - INFO - Running runs: ['mp4lqmzs']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_190034-mp4lqmzs
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run swift-sweep-5
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/mp4lqmzs
+wandb: - 1.593 MB of 1.593 MB uploadedwandb: \ 1.601 MB of 1.601 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁
+wandb:      val_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99047
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 122.56629
+wandb:      val_mse 0.99276
+wandb: 
+wandb: 🚀 View run swift-sweep-5 at: https://wandb.ai/card-fraud-gang/data_science/runs/mp4lqmzs
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_190034-mp4lqmzs/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:09:02,900 - wandb.wandb_agent - INFO - Cleaning up finished run: mp4lqmzs
+2025-11-20 19:09:03,591 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:09:03,592 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 100
+	hidden_dim: 256
+	latent: 8
+	lr: 0.06305785900370312
+	num_layers: 3
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:09:03,596 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=100 --hidden_dim=256 --latent=8 --lr=0.06305785900370312 --num_layers=3 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:09:08,607 - wandb.wandb_agent - INFO - Running runs: ['k5odhxbp']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_190911-k5odhxbp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run charmed-sweep-6
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/k5odhxbp
+wandb: - 1.090 MB of 1.090 MB uploadedwandb: \ 1.090 MB of 1.098 MB uploadedwandb: | 1.098 MB of 1.098 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99091
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 5083118366.97077
+wandb:      val_mse 9352.67578
+wandb: 
+wandb: 🚀 View run charmed-sweep-6 at: https://wandb.ai/card-fraud-gang/data_science/runs/k5odhxbp
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_190911-k5odhxbp/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:16:43,577 - wandb.wandb_agent - INFO - Cleaning up finished run: k5odhxbp
+2025-11-20 19:16:44,216 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:16:44,216 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 40
+	hidden_dim: 256
+	latent: 8
+	lr: 0.08354081882488153
+	num_layers: 3
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 19:16:44,221 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=40 --hidden_dim=256 --latent=8 --lr=0.08354081882488153 --num_layers=3 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 19:16:49,232 - wandb.wandb_agent - INFO - Running runs: ['uwnrcwuf']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_191653-uwnrcwuf
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run summer-sweep-7
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/uwnrcwuf
+wandb: - 1.090 MB of 1.090 MB uploadedwandb: \ 1.090 MB of 1.096 MB uploadedwandb: | 1.096 MB of 1.096 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁█▁▁▁▁
+wandb:      val_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁███████████▃▃▃▃▃
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99046
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 40
+wandb:    train_mse 11002196.74556
+wandb:      val_mse 7.82462
+wandb: 
+wandb: 🚀 View run summer-sweep-7 at: https://wandb.ai/card-fraud-gang/data_science/runs/uwnrcwuf
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_191653-uwnrcwuf/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:17:56,478 - wandb.wandb_agent - INFO - Cleaning up finished run: uwnrcwuf
+2025-11-20 19:17:56,947 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:17:56,947 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 70
+	hidden_dim: 256
+	latent: 8
+	lr: 0.044559758610286375
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 19:17:56,951 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=70 --hidden_dim=256 --latent=8 --lr=0.044559758610286375 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 19:18:01,962 - wandb.wandb_agent - INFO - Running runs: ['64jblruq']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_191804-64jblruq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run avid-sweep-8
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/64jblruq
+wandb: - 0.083 MB of 0.083 MB uploadedwandb: \ 0.090 MB of 0.090 MB uploadedwandb: | 0.090 MB of 0.090 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▁▆▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▁▁
+wandb:      val_mse ▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.9905
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 70
+wandb:    train_mse 1.13073
+wandb:      val_mse 0.99397
+wandb: 
+wandb: 🚀 View run avid-sweep-8 at: https://wandb.ai/card-fraud-gang/data_science/runs/64jblruq
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_191804-64jblruq/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:21:23,753 - wandb.wandb_agent - INFO - Cleaning up finished run: 64jblruq
+2025-11-20 19:21:24,344 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:21:24,344 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	epochs: 10
+	hidden_dim: 512
+	latent: 8
+	lr: 0.09336667229063
+	num_layers: 5
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 19:21:24,349 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=64 --epochs=10 --hidden_dim=512 --latent=8 --lr=0.09336667229063 --num_layers=5 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 19:21:29,360 - wandb.wandb_agent - INFO - Running runs: ['zgsuv4og']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_192132-zgsuv4og
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run wild-sweep-9
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/zgsuv4og
+wandb: - 1.457 MB of 8.185 MB uploadedwandb: \ 2.103 MB of 8.185 MB uploadedwandb: | 2.853 MB of 8.185 MB uploadedwandb: / 3.775 MB of 8.185 MB uploadedwandb: - 4.868 MB of 8.185 MB uploadedwandb: \ 5.665 MB of 8.185 MB uploadedwandb: | 6.478 MB of 8.185 MB uploadedwandb: / 7.290 MB of 8.185 MB uploadedwandb: - 7.962 MB of 8.185 MB uploadedwandb: \ 8.185 MB of 8.185 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁
+wandb:      val_mse █▃▃▃▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 2.81513
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 2.76251
+wandb:      val_mse 2.81513
+wandb: 
+wandb: 🚀 View run wild-sweep-9 at: https://wandb.ai/card-fraud-gang/data_science/runs/zgsuv4og
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_192132-zgsuv4og/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:22:26,260 - wandb.wandb_agent - INFO - Cleaning up finished run: zgsuv4og
+2025-11-20 19:22:26,789 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:22:26,789 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 512
+	epochs: 20
+	hidden_dim: 512
+	latent: 8
+	lr: 0.09569798333856704
+	num_layers: 3
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 19:22:26,793 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=512 --epochs=20 --hidden_dim=512 --latent=8 --lr=0.09569798333856704 --num_layers=3 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 19:22:31,804 - wandb.wandb_agent - INFO - Running runs: ['6cn7roj2']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_192234-6cn7roj2
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run wild-sweep-10
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/6cn7roj2
+wandb: - 2.004 MB of 4.170 MB uploadedwandb: \ 2.738 MB of 4.175 MB uploadedwandb: | 3.478 MB of 4.175 MB uploadedwandb: / 4.175 MB of 4.175 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse █▆▅▃▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99046
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 20
+wandb:    train_mse 0.9345
+wandb:      val_mse 0.9905
+wandb: 
+wandb: 🚀 View run wild-sweep-10 at: https://wandb.ai/card-fraud-gang/data_science/runs/6cn7roj2
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_192234-6cn7roj2/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:23:02,793 - wandb.wandb_agent - INFO - Cleaning up finished run: 6cn7roj2
+2025-11-20 19:23:03,471 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:23:03,471 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 100
+	hidden_dim: 64
+	latent: 8
+	lr: 0.023120676509405063
+	num_layers: 2
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:23:03,476 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=100 --hidden_dim=64 --latent=8 --lr=0.023120676509405063 --num_layers=2 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:23:08,486 - wandb.wandb_agent - INFO - Running runs: ['nbpwx8tt']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_192311-nbpwx8tt
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run faithful-sweep-11
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/nbpwx8tt
+wandb: - 0.059 MB of 0.059 MB uploadedwandb: \ 0.059 MB of 0.067 MB uploadedwandb: | 0.067 MB of 0.067 MB uploadedwandb: / 0.067 MB of 0.067 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁▆▅▅▅▅▅█▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+wandb:      val_mse ▁███████████████████████████████████████
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.86791
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 0.93638
+wandb:      val_mse 0.9923
+wandb: 
+wandb: 🚀 View run faithful-sweep-11 at: https://wandb.ai/card-fraud-gang/data_science/runs/nbpwx8tt
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_192311-nbpwx8tt/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:28:44,564 - wandb.wandb_agent - INFO - Cleaning up finished run: nbpwx8tt
+2025-11-20 19:28:45,185 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:28:45,185 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	epochs: 40
+	hidden_dim: 1024
+	latent: 8
+	lr: 0.0991198400917194
+	num_layers: 2
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 19:28:45,191 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=64 --epochs=40 --hidden_dim=1024 --latent=8 --lr=0.0991198400917194 --num_layers=2 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 19:28:50,202 - wandb.wandb_agent - INFO - Running runs: ['8cbkob7a']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_192853-8cbkob7a
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run gallant-sweep-12
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/8cbkob7a
+wandb: - 8.321 MB of 8.321 MB uploadedwandb: \ 8.321 MB of 8.327 MB uploadedwandb: | 8.327 MB of 8.327 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse █▇▆▅▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.9905
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 40
+wandb:    train_mse 0.93947
+wandb:      val_mse 0.99576
+wandb: 
+wandb: 🚀 View run gallant-sweep-12 at: https://wandb.ai/card-fraud-gang/data_science/runs/8cbkob7a
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_192853-8cbkob7a/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:30:33,758 - wandb.wandb_agent - INFO - Cleaning up finished run: 8cbkob7a
+2025-11-20 19:30:34,402 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:30:34,402 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	epochs: 50
+	hidden_dim: 64
+	latent: 8
+	lr: 0.08215742597425656
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:30:34,407 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=64 --epochs=50 --hidden_dim=64 --latent=8 --lr=0.08215742597425656 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:30:39,417 - wandb.wandb_agent - INFO - Running runs: ['2fdqj07e']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_193042-2fdqj07e
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run pretty-sweep-13
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/2fdqj07e
+wandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.033 MB uploadedwandb: | 0.033 MB of 0.033 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▃▁▂▁▁▁▁
+wandb:      val_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99048
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 50
+wandb:    train_mse 0.93719
+wandb:      val_mse 1.01551
+wandb: 
+wandb: 🚀 View run pretty-sweep-13 at: https://wandb.ai/card-fraud-gang/data_science/runs/2fdqj07e
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_193042-2fdqj07e/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:32:07,270 - wandb.wandb_agent - INFO - Cleaning up finished run: 2fdqj07e
+2025-11-20 19:32:07,819 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:32:07,819 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 10
+	hidden_dim: 1024
+	latent: 8
+	lr: 0.09594017769374424
+	num_layers: 7
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 19:32:07,823 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=10 --hidden_dim=1024 --latent=8 --lr=0.09594017769374424 --num_layers=7 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 19:32:12,833 - wandb.wandb_agent - INFO - Running runs: ['eahb1fzz']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_193215-eahb1fzz
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run confused-sweep-14
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/eahb1fzz
+wandb: - 1.066 MB of 48.372 MB uploadedwandb: \ 11.228 MB of 48.372 MB uploadedwandb: | 48.372 MB of 48.372 MB uploadedwandb: / 48.372 MB of 48.372 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse ▁█████████
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse inf
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 2.332370767769978e+33
+wandb:      val_mse inf
+wandb: 
+wandb: 🚀 View run confused-sweep-14 at: https://wandb.ai/card-fraud-gang/data_science/runs/eahb1fzz
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_193215-eahb1fzz/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:34:01,377 - wandb.wandb_agent - INFO - Cleaning up finished run: eahb1fzz
+2025-11-20 19:34:02,466 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:34:02,467 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 10
+	hidden_dim: 1024
+	latent: 8
+	lr: 0.09767893780367744
+	num_layers: 6
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:34:02,472 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=10 --hidden_dim=1024 --latent=8 --lr=0.09767893780367744 --num_layers=6 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:34:07,482 - wandb.wandb_agent - INFO - Running runs: ['c6eacsoc']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_193410-c6eacsoc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run splendid-sweep-15
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/c6eacsoc
+wandb: - 1.332 MB of 40.357 MB uploadedwandb: \ 2.254 MB of 40.363 MB uploadedwandb: | 2.806 MB of 40.363 MB uploadedwandb: / 3.712 MB of 40.363 MB uploadedwandb: - 4.259 MB of 40.363 MB uploadedwandb: \ 4.806 MB of 40.363 MB uploadedwandb: | 5.353 MB of 40.363 MB uploadedwandb: / 6.087 MB of 40.363 MB uploadedwandb: - 6.822 MB of 40.363 MB uploadedwandb: \ 7.915 MB of 40.363 MB uploadedwandb: | 8.634 MB of 40.363 MB uploadedwandb: / 9.556 MB of 40.363 MB uploadedwandb: - 10.290 MB of 40.363 MB uploadedwandb: \ 11.009 MB of 40.363 MB uploadedwandb: | 11.931 MB of 40.363 MB uploadedwandb: / 12.837 MB of 40.363 MB uploadedwandb: - 13.572 MB of 40.363 MB uploadedwandb: \ 14.290 MB of 40.363 MB uploadedwandb: | 15.212 MB of 40.363 MB uploadedwandb: / 16.306 MB of 40.363 MB uploadedwandb: - 16.853 MB of 40.363 MB uploadedwandb: \ 17.587 MB of 40.363 MB uploadedwandb: | 18.306 MB of 40.363 MB uploadedwandb: / 19.040 MB of 40.363 MB uploadedwandb: - 20.322 MB of 40.363 MB uploadedwandb: \ 21.228 MB of 40.363 MB uploadedwandb: | 22.134 MB of 40.363 MB uploadedwandb: / 22.681 MB of 40.363 MB uploadedwandb: - 23.775 MB of 40.363 MB uploadedwandb: \ 24.509 MB of 40.363 MB uploadedwandb: | 25.244 MB of 40.363 MB uploadedwandb: / 25.978 MB of 40.363 MB uploadedwandb: - 26.884 MB of 40.363 MB uploadedwandb: \ 27.619 MB of 40.363 MB uploadedwandb: | 29.072 MB of 40.363 MB uploadedwandb: / 30.165 MB of 40.363 MB uploadedwandb: - 31.087 MB of 40.363 MB uploadedwandb: \ 31.994 MB of 40.363 MB uploadedwandb: | 33.447 MB of 40.363 MB uploadedwandb: / 34.540 MB of 40.363 MB uploadedwandb: - 35.822 MB of 40.363 MB uploadedwandb: \ 37.462 MB of 40.363 MB uploadedwandb: | 38.556 MB of 40.363 MB uploadedwandb: / 39.525 MB of 40.363 MB uploadedwandb: - 40.363 MB of 40.363 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse █▆▅▃▃▂▂▁▁▁
+wandb:      val_mse █▆▅▃▃▂▂▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 2.2981609491133105e+24
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 2.0948672164180764e+24
+wandb:      val_mse 2.2981609491133105e+24
+wandb: 
+wandb: 🚀 View run splendid-sweep-15 at: https://wandb.ai/card-fraud-gang/data_science/runs/c6eacsoc
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_193410-c6eacsoc/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:35:19,871 - wandb.wandb_agent - INFO - Cleaning up finished run: c6eacsoc
+2025-11-20 19:35:20,421 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:35:20,421 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 20
+	hidden_dim: 512
+	latent: 8
+	lr: 0.09412523715112504
+	num_layers: 4
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:35:20,425 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=20 --hidden_dim=512 --latent=8 --lr=0.09412523715112504 --num_layers=4 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:35:25,436 - wandb.wandb_agent - INFO - Running runs: ['b3mgu95z']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_193528-b3mgu95z
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dulcet-sweep-16
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/b3mgu95z
+wandb: - 2.504 MB of 6.175 MB uploadedwandb: \ 3.410 MB of 6.180 MB uploadedwandb: | 3.786 MB of 6.180 MB uploadedwandb: / 4.509 MB of 6.180 MB uploadedwandb: - 5.431 MB of 6.180 MB uploadedwandb: \ 6.150 MB of 6.180 MB uploadedwandb: | 6.180 MB of 6.180 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse █████▇▇▇▇▇▆▆▅▅▅▄▃▃▂▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 1.78977
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 20
+wandb:    train_mse 1.74808
+wandb:      val_mse 1.78977
+wandb: 
+wandb: 🚀 View run dulcet-sweep-16 at: https://wandb.ai/card-fraud-gang/data_science/runs/b3mgu95z
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_193528-b3mgu95z/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:36:01,607 - wandb.wandb_agent - INFO - Cleaning up finished run: b3mgu95z
+2025-11-20 19:36:02,376 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:36:02,376 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 10
+	hidden_dim: 1024
+	latent: 8
+	lr: 0.09883652650309728
+	num_layers: 2
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:36:02,380 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=10 --hidden_dim=1024 --latent=8 --lr=0.09883652650309728 --num_layers=2 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:36:07,391 - wandb.wandb_agent - INFO - Running runs: ['pur4g919']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_193610-pur4g919
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lunar-sweep-17
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/pur4g919
+wandb: - 1.019 MB of 8.321 MB uploadedwandb: \ 1.488 MB of 8.326 MB uploadedwandb: | 1.884 MB of 8.326 MB uploadedwandb: / 2.446 MB of 8.326 MB uploadedwandb: - 3.165 MB of 8.326 MB uploadedwandb: \ 3.790 MB of 8.326 MB uploadedwandb: | 4.587 MB of 8.326 MB uploadedwandb: / 5.353 MB of 8.326 MB uploadedwandb: - 6.306 MB of 8.326 MB uploadedwandb: \ 6.775 MB of 8.326 MB uploadedwandb: | 7.556 MB of 8.326 MB uploadedwandb: / 8.321 MB of 8.326 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁
+wandb:      val_mse █▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 1.72684
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 1.18268
+wandb:      val_mse 1.72684
+wandb: 
+wandb: 🚀 View run lunar-sweep-17 at: https://wandb.ai/card-fraud-gang/data_science/runs/pur4g919
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_193610-pur4g919/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:36:43,592 - wandb.wandb_agent - INFO - Cleaning up finished run: pur4g919
+2025-11-20 19:36:44,215 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:36:44,215 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 10
+	hidden_dim: 1024
+	latent: 8
+	lr: 0.08522177910759084
+	num_layers: 4
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 19:36:44,219 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=10 --hidden_dim=1024 --latent=8 --lr=0.08522177910759084 --num_layers=4 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 19:36:49,230 - wandb.wandb_agent - INFO - Running runs: ['9cn89paa']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_193652-9cn89paa
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run zany-sweep-18
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/9cn89paa
+wandb: - 16.597 MB of 24.344 MB uploadedwandb: \ 24.344 MB of 24.344 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▁█████████
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 1.32313
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 1.26734
+wandb:      val_mse 1.32334
+wandb: 
+wandb: 🚀 View run zany-sweep-18 at: https://wandb.ai/card-fraud-gang/data_science/runs/9cn89paa
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_193652-9cn89paa/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:37:15,053 - wandb.wandb_agent - INFO - Cleaning up finished run: 9cn89paa
+2025-11-20 19:37:15,610 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:37:15,610 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	epochs: 30
+	hidden_dim: 512
+	latent: 8
+	lr: 0.0882698719588935
+	num_layers: 4
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:37:15,614 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=64 --epochs=30 --hidden_dim=512 --latent=8 --lr=0.0882698719588935 --num_layers=4 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:37:20,624 - wandb.wandb_agent - INFO - Running runs: ['o9eynm0h']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_193723-o9eynm0h
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lunar-sweep-19
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/o9eynm0h
+wandb: - 3.616 MB of 6.181 MB uploadedwandb: \ 6.181 MB of 6.181 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▅▆▆▆▆▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁
+wandb:      val_mse ▁▁▁▁▃▃▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99053
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 30
+wandb:    train_mse 494116371947810.2
+wandb:      val_mse 2903.94678
+wandb: 
+wandb: 🚀 View run lunar-sweep-19 at: https://wandb.ai/card-fraud-gang/data_science/runs/o9eynm0h
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_193723-o9eynm0h/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:38:58,966 - wandb.wandb_agent - INFO - Cleaning up finished run: o9eynm0h
+2025-11-20 19:38:59,546 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:38:59,546 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 50
+	hidden_dim: 1024
+	latent: 8
+	lr: 0.09722379744434737
+	num_layers: 2
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 19:38:59,551 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=50 --hidden_dim=1024 --latent=8 --lr=0.09722379744434737 --num_layers=2 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 19:39:04,561 - wandb.wandb_agent - INFO - Running runs: ['oh9m2fx7']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_193907-oh9m2fx7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run iconic-sweep-20
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/oh9m2fx7
+wandb: - 2.941 MB of 8.327 MB uploadedwandb: \ 4.760 MB of 8.327 MB uploadedwandb: | 5.870 MB of 8.327 MB uploadedwandb: / 6.963 MB of 8.327 MB uploadedwandb: - 8.327 MB of 8.327 MB uploadedwandb: \ 8.327 MB of 8.327 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb:    train_mse ▁▁▁▆█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.9943
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 50
+wandb:    train_mse 0.94363
+wandb:      val_mse 0.99607
+wandb: 
+wandb: 🚀 View run iconic-sweep-20 at: https://wandb.ai/card-fraud-gang/data_science/runs/oh9m2fx7
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_193907-oh9m2fx7/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:40:22,109 - wandb.wandb_agent - INFO - Cleaning up finished run: oh9m2fx7
+2025-11-20 19:40:22,665 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:40:22,665 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 10
+	hidden_dim: 256
+	latent: 8
+	lr: 0.08201862341668739
+	num_layers: 2
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:40:22,669 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=10 --hidden_dim=256 --latent=8 --lr=0.08201862341668739 --num_layers=2 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:40:27,681 - wandb.wandb_agent - INFO - Running runs: ['5qhrkx25']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_194030-5qhrkx25
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run vital-sweep-21
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/5qhrkx25
+wandb: - 0.586 MB of 0.586 MB uploadedwandb: \ 0.586 MB of 0.592 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse ▁▁▁▁▁▁▁█▁▁
+wandb:      val_mse ▁▁▁▁▁▁█▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99051
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 94769227.62914
+wandb:      val_mse 3.88583
+wandb: 
+wandb: 🚀 View run vital-sweep-21 at: https://wandb.ai/card-fraud-gang/data_science/runs/5qhrkx25
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_194030-5qhrkx25/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:40:58,709 - wandb.wandb_agent - INFO - Cleaning up finished run: 5qhrkx25
+2025-11-20 19:40:59,200 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:40:59,200 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 30
+	hidden_dim: 1024
+	latent: 8
+	lr: 0.09671416405738892
+	num_layers: 5
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:40:59,204 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=30 --hidden_dim=1024 --latent=8 --lr=0.09671416405738892 --num_layers=5 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:41:04,215 - wandb.wandb_agent - INFO - Running runs: ['7wjyncrq']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_194107-7wjyncrq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run crimson-sweep-22
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/7wjyncrq
+wandb: - 11.910 MB of 32.348 MB uploadedwandb: \ 32.348 MB of 32.354 MB uploadedwandb: | 32.354 MB of 32.354 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▅▆▆▆▆▇▇▇▇███
+wandb:    train_mse ▆▁▁▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▁▁▁▁▁▁▁▁▂▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 6.89549
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 30
+wandb:    train_mse 6.84047
+wandb:      val_mse 6.89549
+wandb: 
+wandb: 🚀 View run crimson-sweep-22 at: https://wandb.ai/card-fraud-gang/data_science/runs/7wjyncrq
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_194107-7wjyncrq/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:41:55,892 - wandb.wandb_agent - INFO - Cleaning up finished run: 7wjyncrq
+2025-11-20 19:41:56,436 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:41:56,437 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 10
+	hidden_dim: 256
+	latent: 8
+	lr: 0.09665115782925572
+	num_layers: 6
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:41:56,441 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=10 --hidden_dim=256 --latent=8 --lr=0.09665115782925572 --num_layers=6 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:42:01,452 - wandb.wandb_agent - INFO - Running runs: ['l6nes9b4']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_194204-l6nes9b4
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run zany-sweep-23
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/l6nes9b4
+wandb: - 2.599 MB of 2.605 MB uploadedwandb: \ 2.603 MB of 2.605 MB uploadedwandb: | 2.605 MB of 2.605 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▁▁▁▁▁▁▁▂▃█
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 2.7302
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 1.99858
+wandb:      val_mse 696172800.0
+wandb: 
+wandb: 🚀 View run zany-sweep-23 at: https://wandb.ai/card-fraud-gang/data_science/runs/l6nes9b4
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_194204-l6nes9b4/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:42:27,335 - wandb.wandb_agent - INFO - Cleaning up finished run: l6nes9b4
+2025-11-20 19:42:27,852 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:42:27,852 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 10
+	hidden_dim: 256
+	latent: 8
+	lr: 0.0917707755900928
+	num_layers: 4
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:42:27,857 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=10 --hidden_dim=256 --latent=8 --lr=0.0917707755900928 --num_layers=4 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:42:32,868 - wandb.wandb_agent - INFO - Running runs: ['mx7dq7nu']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_194236-mx7dq7nu
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run wise-sweep-24
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/mx7dq7nu
+wandb: - 1.593 MB of 1.598 MB uploadedwandb: \ 1.598 MB of 1.598 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ██▂▂▂▂▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 1.18706
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 1.13236
+wandb:      val_mse 1.18706
+wandb: 
+wandb: 🚀 View run wise-sweep-24 at: https://wandb.ai/card-fraud-gang/data_science/runs/mx7dq7nu
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_194236-mx7dq7nu/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:42:58,789 - wandb.wandb_agent - INFO - Cleaning up finished run: mx7dq7nu
+2025-11-20 19:42:59,333 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:42:59,333 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	epochs: 90
+	hidden_dim: 512
+	latent: 8
+	lr: 0.09216224449164888
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 19:42:59,338 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=64 --epochs=90 --hidden_dim=512 --latent=8 --lr=0.09216224449164888 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 19:43:04,348 - wandb.wandb_agent - INFO - Running runs: ['wenu4oiw']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_194307-wenu4oiw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run winter-sweep-25
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/wenu4oiw
+wandb: - 0.159 MB of 0.159 MB uploadedwandb: \ 0.159 MB of 0.167 MB uploadedwandb: | 0.167 MB of 0.167 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▁▁▁▁▂▁▂▁▁▁▁▁▁▆▁▁▁▁▁▆▆▁▂▃▂▁▁▁▁▁█▁▁▂▁▁
+wandb:      val_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▃▁▄▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.89388
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 90
+wandb:    train_mse 1661648.46787
+wandb:      val_mse 1964.76611
+wandb: 
+wandb: 🚀 View run winter-sweep-25 at: https://wandb.ai/card-fraud-gang/data_science/runs/wenu4oiw
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_194307-wenu4oiw/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:45:29,390 - wandb.wandb_agent - INFO - Cleaning up finished run: wenu4oiw
+2025-11-20 19:45:29,969 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:45:29,969 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 30
+	hidden_dim: 512
+	latent: 8
+	lr: 0.09672612386004556
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 19:45:29,974 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=30 --hidden_dim=512 --latent=8 --lr=0.09672612386004556 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 19:45:34,985 - wandb.wandb_agent - INFO - Running runs: ['xbjhronw']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_194537-xbjhronw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lucky-sweep-26
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/xbjhronw
+wandb: - 0.159 MB of 0.159 MB uploadedwandb: \ 0.159 MB of 0.165 MB uploadedwandb: | 0.165 MB of 0.165 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▅▆▆▆▆▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ██▇▇▆▅▄▂▁▁▁▁▅▇████████████████
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.7391
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 30
+wandb:    train_mse 0.9353
+wandb:      val_mse 0.99134
+wandb: 
+wandb: 🚀 View run lucky-sweep-26 at: https://wandb.ai/card-fraud-gang/data_science/runs/xbjhronw
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_194537-xbjhronw/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:46:16,325 - wandb.wandb_agent - INFO - Cleaning up finished run: xbjhronw
+2025-11-20 19:46:16,898 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:46:16,898 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 100
+	hidden_dim: 128
+	latent: 8
+	lr: 0.0982464133034775
+	num_layers: 2
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 19:46:16,903 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=100 --hidden_dim=128 --latent=8 --lr=0.0982464133034775 --num_layers=2 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 19:46:21,914 - wandb.wandb_agent - INFO - Running runs: ['fozorhdx']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_194624-fozorhdx
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run misty-sweep-27
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/fozorhdx
+wandb: - 0.172 MB of 0.172 MB uploadedwandb: \ 0.172 MB of 0.180 MB uploadedwandb: | 0.180 MB of 0.180 MB uploadedwandb: / 0.180 MB of 0.180 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▁▂▂▂▃▃▃▃▄▃▅▆▅▄▅▄▇▇▇█▅▆▄█▅▃▆▄▅▇▆▅▆▆▆▅▃▅█▇
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99048
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 0.93685
+wandb:      val_mse 0.9935
+wandb: 
+wandb: 🚀 View run misty-sweep-27 at: https://wandb.ai/card-fraud-gang/data_science/runs/fozorhdx
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_194624-fozorhdx/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:47:44,599 - wandb.wandb_agent - INFO - Cleaning up finished run: fozorhdx
+2025-11-20 19:47:45,174 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:47:45,174 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 64
+	epochs: 100
+	hidden_dim: 64
+	latent: 8
+	lr: 0.06310321148368486
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 19:47:45,180 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=64 --epochs=100 --hidden_dim=64 --latent=8 --lr=0.06310321148368486 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 19:47:50,191 - wandb.wandb_agent - INFO - Running runs: ['nlo5n1en']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_194752-nlo5n1en
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run wild-sweep-28
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/nlo5n1en
+wandb: - 0.030 MB of 0.034 MB uploadedwandb: \ 0.034 MB of 0.034 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▂▁▁▁▁▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▁▁▁
+wandb:      val_mse ▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99049
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 0.94793
+wandb:      val_mse 0.99098
+wandb: 
+wandb: 🚀 View run wild-sweep-28 at: https://wandb.ai/card-fraud-gang/data_science/runs/nlo5n1en
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_194752-nlo5n1en/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:50:25,413 - wandb.wandb_agent - INFO - Cleaning up finished run: nlo5n1en
+2025-11-20 19:50:25,927 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:50:25,927 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 1024
+	epochs: 50
+	hidden_dim: 512
+	latent: 8
+	lr: 0.09749385729100464
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 19:50:25,931 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=1024 --epochs=50 --hidden_dim=512 --latent=8 --lr=0.09749385729100464 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 19:50:30,942 - wandb.wandb_agent - INFO - Running runs: ['p9ocs6og']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195034-p9ocs6og
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run twilight-sweep-29
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/p9ocs6og
+wandb: - 0.159 MB of 0.166 MB uploadedwandb: \ 0.166 MB of 0.166 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99048
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 50
+wandb:    train_mse 0.93458
+wandb:      val_mse 0.9906
+wandb: 
+wandb: 🚀 View run twilight-sweep-29 at: https://wandb.ai/card-fraud-gang/data_science/runs/p9ocs6og
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195034-p9ocs6og/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:51:07,183 - wandb.wandb_agent - INFO - Cleaning up finished run: p9ocs6og
+2025-11-20 19:51:07,711 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:51:07,711 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 1024
+	epochs: 40
+	hidden_dim: 64
+	latent: 8
+	lr: 0.06949673618935011
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 19:51:07,715 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=1024 --epochs=40 --hidden_dim=64 --latent=8 --lr=0.06949673618935011 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 19:51:12,726 - wandb.wandb_agent - INFO - Running runs: ['1i5y3scu']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195115-1i5y3scu
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sweet-sweep-30
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/1i5y3scu
+wandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.032 MB uploadedwandb: | 0.030 MB of 0.032 MB uploadedwandb: / 0.032 MB of 0.032 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse █▄▃▂▂▂▁▁▁▄▃▃▅▃▃▂▂▂▂▂▂▂▂▂▂▁▁▃▁▁▁▁▂▁▁▁▁▁▁▁
+wandb:      val_mse █▅▄▃▃▁▂▁▁▅▄▆▅▄▃▄▄▃▃▃▃▂▂▂▂▃▂▂▂▂▂▃▂▂▃▂▁▂▂▂
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.25973
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 40
+wandb:    train_mse 0.2456
+wandb:      val_mse 0.31873
+wandb: 
+wandb: 🚀 View run sweet-sweep-30 at: https://wandb.ai/card-fraud-gang/data_science/runs/1i5y3scu
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195115-1i5y3scu/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:51:43,718 - wandb.wandb_agent - INFO - Cleaning up finished run: 1i5y3scu
+2025-11-20 19:51:44,254 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:51:44,254 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 10
+	hidden_dim: 512
+	latent: 8
+	lr: 0.09845752734648566
+	num_layers: 5
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:51:44,259 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=10 --hidden_dim=512 --latent=8 --lr=0.09845752734648566 --num_layers=5 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:51:49,269 - wandb.wandb_agent - INFO - Running runs: ['h63m3ys0']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195152-h63m3ys0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run crimson-sweep-31
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/h63m3ys0
+wandb: - 1.801 MB of 8.180 MB uploadedwandb: \ 2.894 MB of 8.185 MB uploadedwandb: | 3.634 MB of 8.185 MB uploadedwandb: / 4.853 MB of 8.185 MB uploadedwandb: - 5.947 MB of 8.185 MB uploadedwandb: \ 7.525 MB of 8.185 MB uploadedwandb: | 8.185 MB of 8.185 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 1.03127
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 0.97529
+wandb:      val_mse 1.03127
+wandb: 
+wandb: 🚀 View run crimson-sweep-31 at: https://wandb.ai/card-fraud-gang/data_science/runs/h63m3ys0
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195152-h63m3ys0/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:52:20,348 - wandb.wandb_agent - INFO - Cleaning up finished run: h63m3ys0
+2025-11-20 19:52:20,861 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:52:20,861 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 10
+	hidden_dim: 512
+	latent: 8
+	lr: 0.09968900979798972
+	num_layers: 5
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:52:20,866 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=10 --hidden_dim=512 --latent=8 --lr=0.09968900979798972 --num_layers=5 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:52:25,876 - wandb.wandb_agent - INFO - Running runs: ['z1cos4el']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195228-z1cos4el
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fast-sweep-32
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/z1cos4el
+wandb: - 8.180 MB of 8.180 MB uploadedwandb: \ 8.180 MB of 8.185 MB uploadedwandb: | 8.185 MB of 8.185 MB uploadedwandb: / 8.185 MB of 8.185 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▇▁▁▁▁▁▁▁█▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 361990496.0
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 2871212240.93057
+wandb:      val_mse 907361280.0
+wandb: 
+wandb: 🚀 View run fast-sweep-32 at: https://wandb.ai/card-fraud-gang/data_science/runs/z1cos4el
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195228-z1cos4el/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:52:51,775 - wandb.wandb_agent - INFO - Cleaning up finished run: z1cos4el
+2025-11-20 19:52:52,450 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:52:52,450 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 90
+	hidden_dim: 256
+	latent: 8
+	lr: 0.08982914906949827
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 19:52:52,455 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=90 --hidden_dim=256 --latent=8 --lr=0.08982914906949827 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 19:52:57,465 - wandb.wandb_agent - INFO - Running runs: ['06wsl1za']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195300-06wsl1za
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run apricot-sweep-33
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/06wsl1za
+wandb: - 0.083 MB of 0.083 MB uploadedwandb: \ 0.083 MB of 0.091 MB uploadedwandb: | 0.091 MB of 0.091 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse █▁▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+wandb:      val_mse ▅▁██████████████████████████████████████
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.77467
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 90
+wandb:    train_mse 0.93781
+wandb:      val_mse 0.99453
+wandb: 
+wandb: 🚀 View run apricot-sweep-33 at: https://wandb.ai/card-fraud-gang/data_science/runs/06wsl1za
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195300-06wsl1za/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:54:26,752 - wandb.wandb_agent - INFO - Cleaning up finished run: 06wsl1za
+2025-11-20 19:54:27,671 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:54:27,671 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 30
+	hidden_dim: 1024
+	latent: 8
+	lr: 0.09370813291300752
+	num_layers: 5
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:54:27,676 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=30 --hidden_dim=1024 --latent=8 --lr=0.09370813291300752 --num_layers=5 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:54:32,686 - wandb.wandb_agent - INFO - Running runs: ['r8oenpe9']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195435-r8oenpe9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run whole-sweep-34
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/r8oenpe9
+wandb: - 2.660 MB of 32.348 MB uploadedwandb: \ 32.348 MB of 32.354 MB uploadedwandb: | 32.354 MB of 32.354 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▅▆▆▆▆▇▇▇▇███
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▂▄▂▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 15.34097
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 30
+wandb:    train_mse 15.27399
+wandb:      val_mse 15.34097
+wandb: 
+wandb: 🚀 View run whole-sweep-34 at: https://wandb.ai/card-fraud-gang/data_science/runs/r8oenpe9
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195435-r8oenpe9/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:55:50,379 - wandb.wandb_agent - INFO - Cleaning up finished run: r8oenpe9
+2025-11-20 19:55:50,953 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:55:50,953 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 10
+	hidden_dim: 64
+	latent: 8
+	lr: 0.09278573009516902
+	num_layers: 3
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:55:50,957 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=10 --hidden_dim=64 --latent=8 --lr=0.09278573009516902 --num_layers=3 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:55:55,968 - wandb.wandb_agent - INFO - Running runs: ['dfck6nce']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195559-dfck6nce
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fresh-sweep-35
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/dfck6nce
+wandb: - 0.092 MB of 0.092 MB uploadedwandb: \ 0.092 MB of 0.097 MB uploadedwandb: | 0.097 MB of 0.097 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse ▁▁▁▁▁▁█▁▁▁
+wandb:      val_mse ▁▁▁█▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99827
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 51.69243
+wandb:      val_mse 50.3179
+wandb: 
+wandb: 🚀 View run fresh-sweep-35 at: https://wandb.ai/card-fraud-gang/data_science/runs/dfck6nce
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195559-dfck6nce/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:56:52,957 - wandb.wandb_agent - INFO - Cleaning up finished run: dfck6nce
+2025-11-20 19:56:53,660 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:56:53,660 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 20
+	hidden_dim: 64
+	latent: 8
+	lr: 0.012599641892062485
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:56:53,664 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=20 --hidden_dim=64 --latent=8 --lr=0.012599641892062485 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:56:58,675 - wandb.wandb_agent - INFO - Running runs: ['vx7hmkb8']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195701-vx7hmkb8
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run graceful-sweep-36
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/vx7hmkb8
+wandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.032 MB uploadedwandb: | 0.032 MB of 0.032 MB uploadedwandb: / 0.032 MB of 0.032 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:    train_mse ▁▁▁▂▂▃▄▆████████████
+wandb:      val_mse ▁▁▂▁▁▃▅▇████████████
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.51796
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 20
+wandb:    train_mse 0.93055
+wandb:      val_mse 0.99186
+wandb: 
+wandb: 🚀 View run graceful-sweep-36 at: https://wandb.ai/card-fraud-gang/data_science/runs/vx7hmkb8
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195701-vx7hmkb8/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:58:11,313 - wandb.wandb_agent - INFO - Cleaning up finished run: vx7hmkb8
+2025-11-20 19:58:12,016 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:58:12,016 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 512
+	epochs: 10
+	hidden_dim: 64
+	latent: 8
+	lr: 0.06202797107748312
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:58:12,020 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=512 --epochs=10 --hidden_dim=64 --latent=8 --lr=0.06202797107748312 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:58:17,031 - wandb.wandb_agent - INFO - Running runs: ['4fxnl4sj']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195819-4fxnl4sj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lemon-sweep-37
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/4fxnl4sj
+wandb: - 0.026 MB of 0.032 MB uploadedwandb: \ 0.029 MB of 0.032 MB uploadedwandb: | 0.032 MB of 0.032 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse ▇▃▃▄▄▂▁█▇▅
+wandb:      val_mse ▇▁▄▄▄▁▂█▇▅
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.38859
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 0.50598
+wandb:      val_mse 0.52455
+wandb: 
+wandb: 🚀 View run lemon-sweep-37 at: https://wandb.ai/card-fraud-gang/data_science/runs/4fxnl4sj
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195819-4fxnl4sj/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:58:37,656 - wandb.wandb_agent - INFO - Cleaning up finished run: 4fxnl4sj
+2025-11-20 19:58:38,178 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:58:38,178 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 20
+	hidden_dim: 256
+	latent: 8
+	lr: 0.09520350849427822
+	num_layers: 5
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 19:58:38,182 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=20 --hidden_dim=256 --latent=8 --lr=0.09520350849427822 --num_layers=5 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 19:58:43,193 - wandb.wandb_agent - INFO - Running runs: ['dyotvkoq']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195846-dyotvkoq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run frosty-sweep-38
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/dyotvkoq
+wandb: - 1.722 MB of 2.096 MB uploadedwandb: \ 2.096 MB of 2.102 MB uploadedwandb: | 2.102 MB of 2.102 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse █▇▆▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 1.00689
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 20
+wandb:    train_mse 0.95382
+wandb:      val_mse 1.00689
+wandb: 
+wandb: 🚀 View run frosty-sweep-38 at: https://wandb.ai/card-fraud-gang/data_science/runs/dyotvkoq
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195846-dyotvkoq/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 19:59:34,906 - wandb.wandb_agent - INFO - Cleaning up finished run: dyotvkoq
+2025-11-20 19:59:35,716 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 19:59:35,716 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 512
+	epochs: 10
+	hidden_dim: 64
+	latent: 8
+	lr: 0.01402564371766035
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 19:59:35,720 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=512 --epochs=10 --hidden_dim=64 --latent=8 --lr=0.01402564371766035 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 19:59:40,731 - wandb.wandb_agent - INFO - Running runs: ['ez3i4vzz']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_195943-ez3i4vzz
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run silvery-sweep-39
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/ez3i4vzz
+wandb: - 0.026 MB of 0.032 MB uploadedwandb: \ 0.030 MB of 0.032 MB uploadedwandb: | 0.032 MB of 0.032 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse █▃▃▂▂▁▁▁▁▁
+wandb:      val_mse █▅▄▄▃▃▂▂▂▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.12021
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 0.12744
+wandb:      val_mse 0.12021
+wandb: 
+wandb: 🚀 View run silvery-sweep-39 at: https://wandb.ai/card-fraud-gang/data_science/runs/ez3i4vzz
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_195943-ez3i4vzz/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:00:01,485 - wandb.wandb_agent - INFO - Cleaning up finished run: ez3i4vzz
+2025-11-20 20:00:04,101 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:00:04,101 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 10
+	hidden_dim: 64
+	latent: 8
+	lr: 0.07853314902524484
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 20:00:04,106 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=10 --hidden_dim=64 --latent=8 --lr=0.07853314902524484 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 20:00:09,116 - wandb.wandb_agent - INFO - Running runs: ['v5an9ump']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_200011-v5an9ump
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run hearty-sweep-40
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/v5an9ump
+wandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.032 MB uploadedwandb: | 0.032 MB of 0.032 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse ▃▁▅███████
+wandb:      val_mse ▁▁████████
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.7022
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 0.93628
+wandb:      val_mse 0.9923
+wandb: 
+wandb: 🚀 View run hearty-sweep-40 at: https://wandb.ai/card-fraud-gang/data_science/runs/v5an9ump
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_200011-v5an9ump/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:00:29,869 - wandb.wandb_agent - INFO - Cleaning up finished run: v5an9ump
+2025-11-20 20:00:30,585 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:00:30,586 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 100
+	hidden_dim: 128
+	latent: 8
+	lr: 0.09974530850875744
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 20:00:30,591 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=100 --hidden_dim=128 --latent=8 --lr=0.09974530850875744 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 20:00:35,602 - wandb.wandb_agent - INFO - Running runs: ['xpake1ri']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_200038-xpake1ri
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run hardy-sweep-41
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/xpake1ri
+wandb: - 0.045 MB of 0.045 MB uploadedwandb: \ 0.045 MB of 0.053 MB uploadedwandb: | 0.053 MB of 0.053 MB uploadedwandb: / 0.053 MB of 0.053 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▃▂▁▁▁▁▁▁▁
+wandb:      val_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.97361
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 5860.729
+wandb:      val_mse 1.00321
+wandb: 
+wandb: 🚀 View run hardy-sweep-41 at: https://wandb.ai/card-fraud-gang/data_science/runs/xpake1ri
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_200038-xpake1ri/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:05:15,230 - wandb.wandb_agent - INFO - Cleaning up finished run: xpake1ri
+2025-11-20 20:05:15,867 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:05:15,868 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 100
+	hidden_dim: 256
+	latent: 8
+	lr: 0.04873641017442601
+	num_layers: 2
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 20:05:15,872 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=100 --hidden_dim=256 --latent=8 --lr=0.04873641017442601 --num_layers=2 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 20:05:20,884 - wandb.wandb_agent - INFO - Running runs: ['m3a5bi9m']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_200523-m3a5bi9m
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run golden-sweep-42
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/m3a5bi9m
+wandb: - 0.586 MB of 0.594 MB uploadedwandb: \ 0.594 MB of 0.594 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁
+wandb:      val_mse ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.99119
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 4.19158
+wandb:      val_mse 1.00525
+wandb: 
+wandb: 🚀 View run golden-sweep-42 at: https://wandb.ai/card-fraud-gang/data_science/runs/m3a5bi9m
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_200523-m3a5bi9m/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:11:28,479 - wandb.wandb_agent - INFO - Cleaning up finished run: m3a5bi9m
+2025-11-20 20:11:29,102 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:11:29,102 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 40
+	hidden_dim: 512
+	latent: 8
+	lr: 0.09985913230015409
+	num_layers: 6
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 20:11:29,107 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=40 --hidden_dim=512 --latent=8 --lr=0.09985913230015409 --num_layers=6 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 20:11:34,117 - wandb.wandb_agent - INFO - Running runs: ['fiwn2vs9']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_201137-fiwn2vs9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run curious-sweep-43
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/fiwn2vs9
+wandb: - 1.176 MB of 10.185 MB uploadedwandb: \ 2.035 MB of 10.192 MB uploadedwandb: | 2.932 MB of 10.192 MB uploadedwandb: / 4.197 MB of 10.192 MB uploadedwandb: - 5.604 MB of 10.192 MB uploadedwandb: \ 6.494 MB of 10.192 MB uploadedwandb: | 7.557 MB of 10.192 MB uploadedwandb: / 8.697 MB of 10.192 MB uploadedwandb: - 9.635 MB of 10.192 MB uploadedwandb: \ 10.192 MB of 10.192 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▂▂▂▂▂▂▂▂▂▂▂█▄▄▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 1.45949
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 40
+wandb:    train_mse 1.42418
+wandb:      val_mse 1.47332
+wandb: 
+wandb: 🚀 View run curious-sweep-43 at: https://wandb.ai/card-fraud-gang/data_science/runs/fiwn2vs9
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_201137-fiwn2vs9/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:12:41,261 - wandb.wandb_agent - INFO - Cleaning up finished run: fiwn2vs9
+2025-11-20 20:12:41,898 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:12:41,898 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 20
+	hidden_dim: 256
+	latent: 8
+	lr: 0.0921649782505291
+	num_layers: 5
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-05
+2025-11-20 20:12:41,903 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=20 --hidden_dim=256 --latent=8 --lr=0.0921649782505291 --num_layers=5 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-05
+2025-11-20 20:12:46,914 - wandb.wandb_agent - INFO - Running runs: ['uk2qjjc6']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_201249-uk2qjjc6
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run ethereal-sweep-44
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/uk2qjjc6
+wandb: - 2.096 MB of 2.096 MB uploadedwandb: \ 2.096 MB of 2.102 MB uploadedwandb: | 2.102 MB of 2.102 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:    train_mse █▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      val_mse ▁█▂▃▃▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 1.02423
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 20
+wandb:    train_mse 0.97017
+wandb:      val_mse 1.02423
+wandb: 
+wandb: 🚀 View run ethereal-sweep-44 at: https://wandb.ai/card-fraud-gang/data_science/runs/uk2qjjc6
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_201249-uk2qjjc6/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:13:38,666 - wandb.wandb_agent - INFO - Cleaning up finished run: uk2qjjc6
+2025-11-20 20:13:39,276 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:13:39,276 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 100
+	hidden_dim: 64
+	latent: 8
+	lr: 0.011198643092512454
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 20:13:39,280 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=100 --hidden_dim=64 --latent=8 --lr=0.011198643092512454 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 20:13:44,291 - wandb.wandb_agent - INFO - Running runs: ['bv8ogwyv']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_201347-bv8ogwyv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run major-sweep-45
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/bv8ogwyv
+wandb: - 0.031 MB of 0.034 MB uploadedwandb: \ 0.034 MB of 0.034 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse █▃▂▄▂▂▂▂▂▁▁▃▁▁▁▂▁▂▂▂▁▂▁▂▁▁▂▂▁▂▁▁▁▂▁▁▁▁▁▁
+wandb:      val_mse █▃▃▆▂▂▂▂▁▂▄▂▃▂▂▂▃▂▂▁▂▂▁▂▂▄▂▂▂▃▂▂▃▂▃▃▁▁▂▂
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.12692
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 0.14103
+wandb:      val_mse 0.16189
+wandb: 
+wandb: 🚀 View run major-sweep-45 at: https://wandb.ai/card-fraud-gang/data_science/runs/bv8ogwyv
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_201347-bv8ogwyv/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:15:22,478 - wandb.wandb_agent - INFO - Cleaning up finished run: bv8ogwyv
+2025-11-20 20:15:23,166 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:15:23,166 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 30
+	hidden_dim: 64
+	latent: 8
+	lr: 0.013032285618958368
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 1e-06
+2025-11-20 20:15:23,170 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=30 --hidden_dim=64 --latent=8 --lr=0.013032285618958368 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=1e-06
+2025-11-20 20:15:28,181 - wandb.wandb_agent - INFO - Running runs: ['8ru6swur']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_201531-8ru6swur
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fragrant-sweep-46
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/8ru6swur
+wandb: - 0.026 MB of 0.032 MB uploadedwandb: \ 0.032 MB of 0.032 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▅▆▆▆▆▇▇▇▇███
+wandb:    train_mse █▄▄▃▅▃▃▂▂▂▂▂▂▁▁▁▁▁▂▁▁▁▃▂▂▂▃▂▁▂
+wandb:      val_mse ▄▂▂▃▂▄▂▁▁▂▂▃▂▁▂▁▁▁▁▁▁▂▂▂▁▃▃▁▁█
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.14487
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 30
+wandb:    train_mse 0.1774
+wandb:      val_mse 0.60821
+wandb: 
+wandb: 🚀 View run fragrant-sweep-46 at: https://wandb.ai/card-fraud-gang/data_science/runs/8ru6swur
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_201531-8ru6swur/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:16:09,570 - wandb.wandb_agent - INFO - Cleaning up finished run: 8ru6swur
+2025-11-20 20:16:10,128 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:16:10,128 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 100
+	hidden_dim: 64
+	latent: 8
+	lr: 0.036902071482611265
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 20:16:10,132 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=32 --epochs=100 --hidden_dim=64 --latent=8 --lr=0.036902071482611265 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 20:16:15,143 - wandb.wandb_agent - INFO - Running runs: ['hcnzq18n']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_201617-hcnzq18n
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dark-sweep-47
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/hcnzq18n
+wandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.034 MB uploadedwandb: | 0.034 MB of 0.034 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁▆██████████████████████████████████████
+wandb:      val_mse ▁███████████████████████████████████████
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.89406
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 0.93751
+wandb:      val_mse 0.99241
+wandb: 
+wandb: 🚀 View run dark-sweep-47 at: https://wandb.ai/card-fraud-gang/data_science/runs/hcnzq18n
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_201617-hcnzq18n/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:20:49,066 - wandb.wandb_agent - INFO - Cleaning up finished run: hcnzq18n
+2025-11-20 20:20:49,832 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:20:49,832 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 256
+	epochs: 100
+	hidden_dim: 64
+	latent: 8
+	lr: 0.07469214488080425
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 20:20:49,836 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=256 --epochs=100 --hidden_dim=64 --latent=8 --lr=0.07469214488080425 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 20:20:54,846 - wandb.wandb_agent - INFO - Running runs: ['xqmi8pzm']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_202058-xqmi8pzm
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run faithful-sweep-48
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/xqmi8pzm
+wandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.034 MB uploadedwandb: | 0.030 MB of 0.034 MB uploadedwandb: / 0.034 MB of 0.034 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    train_mse ▁▅▆▆▆▆▆▆████████████████████████████████
+wandb:      val_mse ▄▁▁▁▁▁▁▁████████████████████████████████
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.93665
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 100
+wandb:    train_mse 0.93627
+wandb:      val_mse 0.99322
+wandb: 
+wandb: 🚀 View run faithful-sweep-48 at: https://wandb.ai/card-fraud-gang/data_science/runs/xqmi8pzm
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_202058-xqmi8pzm/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:22:07,278 - wandb.wandb_agent - INFO - Cleaning up finished run: xqmi8pzm
+2025-11-20 20:22:08,604 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:22:08,605 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 1024
+	epochs: 50
+	hidden_dim: 128
+	latent: 8
+	lr: 0.032923238344975916
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 20:22:08,610 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=1024 --epochs=50 --hidden_dim=128 --latent=8 --lr=0.032923238344975916 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 20:22:13,616 - wandb.wandb_agent - INFO - Running runs: ['nshxsm3t']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_202216-nshxsm3t
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run zany-sweep-49
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/nshxsm3t
+wandb: - 0.045 MB of 0.052 MB uploadedwandb: \ 0.052 MB of 0.052 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb:    train_mse █▃▃▃▂▃▂▂▂▂▂▂▂▂▃▂▂▂▂▂▂▂▂▂▂▂▁▁▂▁▂▁▁▁▁▂▁▁▁▁
+wandb:      val_mse █▆▆▅▄▃▄▃▂▂▃▂▅▆▅▃▃▂▃▂▂▂▂▂▄▁▂▂▂▂▁▁▁▂▄▂▂▂▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.13219
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 50
+wandb:    train_mse 0.14452
+wandb:      val_mse 0.14295
+wandb: 
+wandb: 🚀 View run zany-sweep-49 at: https://wandb.ai/card-fraud-gang/data_science/runs/nshxsm3t
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_202216-nshxsm3t/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:22:44,612 - wandb.wandb_agent - INFO - Cleaning up finished run: nshxsm3t
+2025-11-20 20:22:45,184 - wandb.wandb_agent - INFO - Agent received command: run
+2025-11-20 20:22:45,184 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 128
+	epochs: 10
+	hidden_dim: 64
+	latent: 8
+	lr: 0.004788157106782537
+	num_layers: 1
+	out_dir: ./checkpoints
+	seed: 42
+	val_split: 0.2
+	weight_decay: 0
+2025-11-20 20:22:45,188 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python main.py --batch_size=128 --epochs=10 --hidden_dim=64 --latent=8 --lr=0.004788157106782537 --num_layers=1 --out_dir=./checkpoints --seed=42 --val_split=0.2 --weight_decay=0
+2025-11-20 20:22:50,195 - wandb.wandb_agent - INFO - Running runs: ['mnvt347q']
+wandb: Currently logged in as: arnormoncada (card-fraud-gang). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /zhome/e3/b/212140/.netrc
+wandb: WARNING Ignoring project 'card-fraud-ae' when running a sweep.
+wandb: WARNING Ignoring entity 'card-fraud-gang' when running a sweep.
+wandb: Tracking run with wandb version 0.19.2
+wandb: Run data is saved locally in /zhome/e3/b/212140/git/data_science/wandb/run-20251120_202252-mnvt347q
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dazzling-sweep-50
+wandb: ⭐️ View project at https://wandb.ai/card-fraud-gang/data_science
+wandb: 🧹 View sweep at https://wandb.ai/card-fraud-gang/data_science/sweeps/l8dpnh7i
+wandb: 🚀 View run at https://wandb.ai/card-fraud-gang/data_science/runs/mnvt347q
+wandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.032 MB uploadedwandb: | 0.032 MB of 0.032 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: best_val_mse ▁
+wandb:      cluster ▁▁▁▁▁▁▁▁▁▁
+wandb:   cluster_id ▁
+wandb: cluster_size ▁
+wandb:        epoch ▁▂▃▃▄▅▆▆▇█
+wandb:    train_mse █▄▃▃▂▂▁▁▁▁
+wandb:      val_mse █▅▄▃▃▃▂▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: best_val_mse 0.13114
+wandb:      cluster 3
+wandb:   cluster_id 3
+wandb: cluster_size 91386
+wandb:        epoch 10
+wandb:    train_mse 0.12444
+wandb:      val_mse 0.13114
+wandb: 
+wandb: 🚀 View run dazzling-sweep-50 at: https://wandb.ai/card-fraud-gang/data_science/runs/mnvt347q
+wandb: ⭐️ View project at: https://wandb.ai/card-fraud-gang/data_science
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+wandb: Find logs at: ./wandb/run-20251120_202252-mnvt347q/logs
+wandb: WARNING The legacy backend is deprecated. In future versions, `wandb-core` will become the sole backend service, and the `wandb.require('legacy-service')` flag will be removed. For more information, visit https://wandb.me/wandb-core
+2025-11-20 20:23:16,069 - wandb.wandb_agent - INFO - Cleaning up finished run: mnvt347q
+wandb: Terminating and syncing runs. Press ctrl-c to kill.
