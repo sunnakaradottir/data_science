@@ -42,6 +42,6 @@ nvidia-smi --query-gpu=name --format=csv,noheader | sort | uniq
 # Cluster 0 = wandb agent --count 50 card-fraud-gang/data_science/qj1xrm4c
 # Cluster 1 = wandb agent --count 50 card-fraud-gang/data_science/aue80fvv
 # Cluster 2 = wandb agent --count 50 card-fraud-gang/data_science/yu2uc1y5
-# Cluster 3 = wandb agent --count 50 card-fraud-gang/data_science/awuytuzf
+# Cluster 3 = wandb agent --count 50 card-fraud-gang/data_science/l8dpnh7i
 echo "Starting wandb agent for cluster 2"
 wandb agent --count 50 card-fraud-gang/data_science/yu2uc1y5

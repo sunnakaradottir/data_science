@@ -1,0 +1,12 @@
+run_name: ae_cluster_1_2025-11-20_12-52-50
+best_val_mse: 0.12606173753738403
+lr: 0.0003663209242790148
+seed: 42
+epochs: 50
+latent: 8
+out_dir: ./checkpoints
+val_split: 0.2
+batch_size: 512
+hidden_dim: 512
+num_layers: 4
+weight_decay: 1e-05

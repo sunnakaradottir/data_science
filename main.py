@@ -35,7 +35,7 @@ def main_setup():
 
 def main_single_cluster():
     X, labels = prep()
-    run(X, labels, sweep=True)
+    run(X, labels, sweep=False)
 
 
 def main():
