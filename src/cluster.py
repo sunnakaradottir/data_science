@@ -86,7 +86,7 @@ def fit_k_means_and_save(
     # 3) Fit KMeans once
     kmeans = perform_kmeans_clustering(X_scaled, n_clusters=n_clusters)
 
-    # print size of each cluster as percentage and save as text file
+    # print size of each cluster as percentage
     labels = kmeans.predict(X_scaled)
     unique, counts = np.unique(labels, return_counts=True)
     total = len(labels)
@@ -104,7 +104,7 @@ def fit_k_means_and_save(
     kmeans_path = os.path.join(dir_path, kmeans_out_path)
     dump(kmeans, kmeans_path)
     print(f"KMeans model saved to {kmeans_path}")
-    return kmeans  # optional, but handy
+    return kmeans
 
 
 def load_kmeans_model(kmeans_path: str = '../data/kmeans.joblib') -> KMeans:
