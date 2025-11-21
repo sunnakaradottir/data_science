@@ -36,7 +36,7 @@ def flatten_config(config):
             flat[k] = v
     return flat
 
-with open("./config.yaml") as file:
+with open("./ae_cluster_2_config.yaml") as file:
     CONFIG = yaml.safe_load(file)
 
 def _train_cluster(X_cluster: np.ndarray, in_dim: int, cfg, cid: int) -> tuple[AutoEncoder, float]:
@@ -70,9 +70,9 @@ def _train_cluster(X_cluster: np.ndarray, in_dim: int, cfg, cid: int) -> tuple[A
             loss.backward()
             opt.step()
             total += loss.item() * xb.size(0)
-        print(f"  Epoch {epoch}/{cfg['epochs']}, Loss: {loss.item():.6f}")
 
         train_mse = total / len(loader.dataset)
+        print(f"Epoch {epoch}/{cfg['epochs']} - Train MSE: {train_mse:.6f}", end=' ')
 
         net.eval()
         with torch.no_grad():
@@ -90,7 +90,7 @@ def _train_cluster(X_cluster: np.ndarray, in_dim: int, cfg, cid: int) -> tuple[A
 
     return net, best_val_mse
 
-def run(X_scaled: np.ndarray, labels: np.ndarray, cluster_id: int, sweep=False):
+def run(X_scaled: np.ndarray, labels: np.ndarray, sweep=False):
     """
     Start ONE wandb run and train an AE for a single cluster.
     If sweep=True, use sweep config; else, flatten config and pick first values.
@@ -99,9 +99,12 @@ def run(X_scaled: np.ndarray, labels: np.ndarray, cluster_id: int, sweep=False):
         wandb.init(project="card-fraud-ae", entity="card-fraud-gang")
         cfg = dict(wandb.config)
     else:
-        flat_cfg = flatten_config(CONFIG)
-        wandb.init(project="card-fraud-ae", entity="card-fraud-gang", config=flat_cfg)
-        cfg = flat_cfg
+        conf = flatten_config(CONFIG)
+        wandb.init(project="card-fraud-ae", entity="card-fraud-gang", config=conf)
+        cfg = conf
+    
+    # OVERRIDE cluster_id from config if present
+    cluster_id = cfg["cluster_id"]
 
     # set seeds and create output dir
     np.random.seed(cfg["seed"])

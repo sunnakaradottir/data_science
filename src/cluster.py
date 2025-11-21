@@ -10,6 +10,7 @@ KMeansType = Union[KMeans, MiniBatchKMeans]
 KMeansSearchResult = namedtuple("KMeansSearchResult", ["best_k", "best_metric", "metric_name", "scores"])
 from src.data import load_base_data, load_scaler
 from joblib import dump, load
+from src.kmeans import kmeans_implementation, OurKmeans
 
 
 
@@ -51,7 +52,7 @@ def plot_elbow_method(k_values: list[int], inertia_values: list[int]) -> None:
     plt.grid(True)
     plt.show()
 
-def perform_kmeans_clustering(data, n_clusters: int) -> KMeans:
+def perform_kmeans_clustering(data, n_clusters: int) -> OurKmeans:
     """
     Perform KMeans clustering on the given data.
     Parameters:
@@ -61,8 +62,8 @@ def perform_kmeans_clustering(data, n_clusters: int) -> KMeans:
     Returns:
     - The fitted KMeans model.
     """
-    kmeans = KMeans(n_clusters=n_clusters, random_state=42) # set random_state for reproducibility
-    kmeans.fit(data)
+    _, centroids = kmeans_implementation(data, n_clusters)
+    kmeans = OurKmeans(centroids=centroids)
     return kmeans
 
 def fit_k_means_and_save(
@@ -85,11 +86,25 @@ def fit_k_means_and_save(
     # 3) Fit KMeans once
     kmeans = perform_kmeans_clustering(X_scaled, n_clusters=n_clusters)
 
+    # print size of each cluster as percentage
+    labels = kmeans.predict(X_scaled)
+    unique, counts = np.unique(labels, return_counts=True)
+    total = len(labels)
+    print("Cluster distribution:")
+    for u, c in zip(unique, counts):
+        print(f"Cluster {u}: {c} samples ({(c/total)*100:.2f}%)")
+    cluster_dist_path = os.path.join(dir_path, '../data/cluster_distribution.txt')
+    with open(cluster_dist_path, 'w') as f:
+        f.write("Cluster distribution:\n")
+        for u, c in zip(unique, counts):
+            f.write(f"Cluster {u}: {c} samples ({(c/total)*100:.2f}%)\n")
+    print(f"Cluster distribution saved to {cluster_dist_path}")
+
     # 4) Save model to disk
     kmeans_path = os.path.join(dir_path, kmeans_out_path)
     dump(kmeans, kmeans_path)
     print(f"KMeans model saved to {kmeans_path}")
-    return kmeans  # optional, but handy
+    return kmeans
 
 
 def load_kmeans_model(kmeans_path: str = '../data/kmeans.joblib') -> KMeans:

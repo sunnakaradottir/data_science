@@ -163,3 +163,36 @@ def fit_and_save_scaler(
 def load_scaler(path: str = '../data/scaler.joblib') -> StandardScaler:
     dir_path = os.path.dirname(os.path.abspath(__file__))
     return joblib.load(os.path.join(dir_path, path))
+
+def label_tune_data_clusters(
+    tune_data_path: str = '../data/tune_data.csv',
+) -> pd.DataFrame:
+    """
+    Load tune_data.csv, predict cluster assignments, print cluster coverage, and return df.
+    """
+    dir_path = os.path.dirname(os.path.abspath(__file__))
+    tune_path = os.path.join(dir_path, tune_data_path)
+
+    df = pd.read_csv(tune_path)
+    if 'Class' not in df.columns:
+        raise ValueError("Expected 'Class' column in tune dataset")
+
+    X = df.drop(columns=['Class'])
+    scaler = load_scaler()
+    X_scaled = scaler.transform(X)
+
+    from src.cluster import load_kmeans_model
+    kmeans = load_kmeans_model()
+    labels = kmeans.predict(X_scaled)
+
+    df_with_clusters = df.copy()
+    df_with_clusters['cluster_id'] = labels
+
+    total = len(labels)
+    unique_clusters = sorted(set(labels))
+    print(f"Cluster IDs present in tune set: {unique_clusters}")
+    for cid in unique_clusters:
+        pct = (labels == cid).sum() / total * 100
+        print(f"  Cluster {cid}: {pct:.2f}% of tune data")
+
+    return df_with_clusters

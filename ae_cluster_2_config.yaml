@@ -1,0 +1,32 @@
+# config.yaml
+program: main.py
+method: bayes
+name: cluster 2 model extra run
+metric:
+  goal: minimize
+  name: val_mse
+parameters:
+  batch_size:
+    value: 1024
+  lr:
+    value: 0.043401408988612285
+  weight_decay:
+    value: 0.00001
+  epochs:
+    value: 50
+  # optimizer:
+  #   values: ['adam', 'adamw']
+  seed:
+    value: 42
+  hidden_dim:
+    value: 1024
+  latent:
+    value: 8
+  num_layers:
+    value: 1
+  val_split:
+    value: 0.2
+  out_dir:
+    value: "./checkpoints"
+  cluster_id:
+    value: 2
