@@ -20,7 +20,6 @@ class AutoEncoder(nn.Module):
             Create an encoder / decoder with a dynamic number of layers
 
             '''
-
             # we can use the same function of encoder and decoder
             layers = []
 
