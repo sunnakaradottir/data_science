@@ -4,9 +4,8 @@ import torch.optim as optim
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
-# define size variables
 num_features = 30  # number of input features (columns) in the dataset
+
 
 class AutoEncoder(nn.Module):
     def __init__(self, in_dim=num_features, hidden_units=64, latent_features=2, num_layers=1):
@@ -39,24 +38,67 @@ class AutoEncoder(nn.Module):
         self.encoder = init_encoder_decoder(in_dim, latent_features, hidden_units, num_layers)
         self.decoder = init_encoder_decoder(latent_features, in_dim, hidden_units, num_layers)
 
-    def forward(self, x): 
-        
+    def forward(self, x):
+
         z = self.encoder(x)
-        
+
         x_hat = self.decoder(z)
-        
+
         return {
             'z': z,
             'x_hat': x_hat
         }
 
+    @staticmethod
+    def _parse_config_file(config_path):
+        """Parse a model config txt file into a dictionary."""
+        config = {}
+        with open(config_path, "r") as f:
+            for line in f:
+                if ":" in line:
+                    key, value = line.split(":", 1)
+                    key = key.strip()
+                    value = value.strip()
+                    if value.isdigit():
+                        value = int(value)
+                    else:
+                        try:
+                            value = float(value)
+                        except ValueError:
+                            pass
+                    config[key] = value
+        return config
 
-# Choose the shape of the autoencoder
-# net = AutoEncoder(in_dim=num_features, hidden_units=64, latent_features=2).to(DEVICE)
+    @classmethod
+    def from_pretrained(cls, cluster_id, models_dir='models', device='cpu'):
+        """
+        Load a pretrained AutoEncoder for a specific cluster.
 
+        Args:
+            cluster_id: Which cluster's model to load (0-3)
+            models_dir: Path to models directory
+            device: 'cpu' or 'cuda'
 
-# print(net)
+        Returns:
+            AutoEncoder with loaded weights, in eval mode
+        """
+        base_path = f'{models_dir}/ae_cluster_{cluster_id}'
+        weights_path = f'{base_path}/ae_cluster_{cluster_id}.pt'
+        config_path = f'{base_path}/ae_cluster_{cluster_id}_config.txt'
 
-# optimizer = optim.Adam(net.parameters(), lr=0.001)
+        config = cls._parse_config_file(config_path)
 
-# criterion = nn.MSELoss()  # Mean Squared Error loss for reconstruction
+        # Create model with correct architecture
+        model = cls(
+            in_dim=num_features,
+            hidden_units=config['hidden_dim'],
+            latent_features=config['latent'],
+            num_layers=config['num_layers']
+        )
+
+        # Load weights
+        weights = torch.load(weights_path, map_location=device)
+        model.load_state_dict(weights)
+        model.eval()
+
+        return model
