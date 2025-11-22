@@ -1,101 +1,47 @@
-import pandas as pd
-from src.data import load_scaler
-from src.cluster import load_kmeans_model
-import torch
 import numpy as np
+import pandas as pd
+import torch
+import torch.nn.functional as F
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 
-def evaluate_thresholds(model, scaler, tune_data_path='/data/tune_data.csv', cluster_id: int = 0) -> None:
-    """
-    Evaluate different classification thresholds on the tune dataset to find the optimal threshold.
-    """
-
-    df = pd.read_csv(tune_data_path)
-
-    # Separate features and labels
-    X = df.drop(columns=["Class"]).values
-    y = df["Class"].values 
-    
-    scaler = load_scaler()
-    X_scaled = scaler.transform(X)   # class labels NOT touched
-
-    #TODO: GET ONLY DATA CORRESPONDING TO THIS CLUSTER
-    # Data was scaled before training model
-    kmeans_model = load_kmeans_model()
-    cluster_label = kmeans_model.predict(X_scaled)
-
-    mask = cluster_label == cluster_id
-    X_cluster = X_scaled[mask]
-    y = y[mask]
-
-    # Convert to torch tensor
-    X_t = torch.tensor(X_cluster, dtype=torch.float32)
-
-    model.eval()
+def compute_reconstruction_errors(model, X):
+    """Pass X through AutoEncoder, return MSE per sample."""
+    X_tensor = torch.tensor(X, dtype=torch.float32)
     with torch.no_grad():
-        outputs = model(X_t)
-        X_hat = outputs["x_hat"]
-        errors = torch.mean((X_hat - X_t)**2, dim=1).cpu().numpy()
+        reconstructed = model(X_tensor)['x_hat']
+        errors = F.mse_loss(reconstructed, X_tensor, reduction='none').mean(dim=1)
+    return errors.cpu().numpy()
 
 
-    thresholds = np.linspace(errors.min(), errors.max(), 50)
+def find_optimal_threshold(errors, y_true, n_thresholds=200):
+    """Try many thresholds, return the one with best F1. Returns (threshold, f1, results_df)."""
+    thresholds = np.linspace(errors.min(), errors.max(), n_thresholds)
+    best_f1, best_threshold = 0, 0
+    all_results = []
 
-    results = []
+    for threshold in thresholds:
+        preds = (errors > threshold).astype(int)
+        tp = ((preds == 1) & (y_true == 1)).sum()
+        fp = ((preds == 1) & (y_true == 0)).sum()
+        fn = ((preds == 0) & (y_true == 1)).sum()
 
-    for t in thresholds:
-        preds = (errors > t).astype(int)    # 1 = fraud predicted
-        
-        tp = ((preds == 1) & (y == 1)).sum()
-        fp = ((preds == 1) & (y == 0)).sum()
-        fn = ((preds == 0) & (y == 1)).sum()
-        tn = ((preds == 0) & (y == 0)).sum()
-
+        precision = tp / (tp + fp + 1e-9)
         recall = tp / (tp + fn + 1e-9)
-        fpr = fp / (fp + tn + 1e-9)
+        f1 = 2 * precision * recall / (precision + recall + 1e-9)
 
-        results.append((t, recall, fpr))
+        all_results.append({'threshold': threshold, 'precision': precision, 'recall': recall, 'f1': f1})
+        if f1 > best_f1:
+            best_f1, best_threshold = f1, threshold
 
-    # Store results as a readible file to analyze later
-    results_df = pd.DataFrame(results, columns=["Threshold", "Recall", "FPR"])
-    results_df.to_csv("../results/threshold_tuning_results.csv", index=False)
-
-
-
-    # fall 1: 
-    #   determine'ar threshold per cluster
-    #   gefur út stats fyrir það
-    #   (fjórar mism skrár, með stats um hvern cluster)
-
-    # fall 2:
-    #   lpadar modelum
-    #   notar threshold
-    #   tekur punkt
-    #   assignar á autencoder
+    return best_threshold, best_f1, pd.DataFrame(all_results)
 
 
-def final_run(thresholds=[0.5, 0.5, 0.5, 0.5], tune_data_path='../data/tune_data.csv'):
-
-    df = pd.read_csv(tune_data_path)
-
-    # Separate features and labels
-    X = df.drop(columns=["Class"]).values
-    y = df["Class"].values 
-    
-    scaler = load_scaler()
-    X_scaled = scaler.transform(X)   
-
-    kmeans_model = load_kmeans_model()
-    X_scaled["cluster_label"] = kmeans_model.predict(X_scaled)
-
-
-    # Split X_scaled into clusters
-    clusters = {}
-    for cid in range(len(thresholds)):
-        clusters[cid] = X_scaled[X_scaled["cluster_label"] == cid]
-
-
-    # Tekur punkt og hendir í rétt módel
-
-
-    # assignar módel
- 
+def calculate_metrics(y_true, y_pred):
+    """Return dict with accuracy, precision, recall, f1."""
+    return {
+        'accuracy': accuracy_score(y_true, y_pred),
+        'precision': precision_score(y_true, y_pred, zero_division=0),
+        'recall': recall_score(y_true, y_pred, zero_division=0),
+        'f1': f1_score(y_true, y_pred, zero_division=0)
+    }
