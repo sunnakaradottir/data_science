@@ -1,8 +1,8 @@
 run_name: ae_cluster_2_2025-11-20_22-24-47
-best_val_mse: 0.12700451910495758
+best_val_mse: 0.1251615434885025
 lr: 0.043401408988612285
 seed: 42
-epochs: 90
+epochs: 50
 latent: 8
 out_dir: ./checkpoints
 val_split: 0.2
